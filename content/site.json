@@ -1,0 +1,65 @@
+{
+  "brand": {
+    "name": "Rao Muhammad Ali",
+    "tagline": "SDET & QA Engineer crafting resilient, automation-first quality systems",
+    "logoUrl": null
+  },
+  "navLinks": [
+    {
+      "key": "home",
+      "href": "/"
+    },
+    {
+      "key": "about",
+      "href": "/about"
+    },
+    {
+      "key": "experience",
+      "href": "/experience"
+    },
+    {
+      "key": "projects",
+      "href": "/projects"
+    },
+    {
+      "key": "skills",
+      "href": "/skills"
+    },
+    {
+      "key": "contact",
+      "href": "#contact"
+    }
+  ],
+  "primaryCta": {
+    "key": "primary",
+    "href": "#contact"
+  },
+  "footerColumns": [
+    {
+      "key": "explore",
+      "links": [
+        { "key": "about", "href": "/about" },
+        { "key": "experience", "href": "/experience" },
+        { "key": "projects", "href": "/projects" },
+        { "key": "skills", "href": "/skills" }
+      ]
+    },
+    {
+      "key": "connect",
+      "links": [
+        { "key": "contact", "href": "/contact" },
+        { "key": "email", "href": "mailto:rao.muhammadali.qa@gmail.com" },
+        { "key": "linkedin", "href": "https://www.linkedin.com/in/raomuhammadali" }
+      ]
+    }
+  ],
+  "socialLinks": [
+    { "platform": "linkedin", "href": "https://www.linkedin.com/in/raomuhammadali" },
+    { "platform": "github", "href": "https://github.com/raomuhammadali" }
+  ],
+  "motion": {
+    "intensity": 8
+  },
+  "navbarVariant": "split",
+  "footerVariant": "columns"
+}

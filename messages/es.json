@@ -1,0 +1,678 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Acerca de",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+  "cta": {
+    "primary": "Descargar CV"
+  },
+  "footer": {
+    "tagline": "Ingeniero SDET y QA que crea sistemas de calidad resilientes y enfocados en automatización",
+    "rights": "Todos los derechos reservados.",
+    "columns": {
+      "explore": "Explorar",
+      "connect": "Conectar"
+    },
+    "links": {
+      "about": "Acerca de",
+      "experience": "Experiencia",
+      "projects": "Proyectos",
+      "skills": "Habilidades",
+      "contact": "Contacto",
+      "email": "Envíame un correo",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "projects": {
+    "header": {
+      "eyebrow": "Trabajo Seleccionado",
+      "title": "Proyectos construidos para detectar errores antes que los usuarios",
+      "subtitle": "Una colección de marcos de automatización, plataformas de pruebas asistidas por IA y herramientas internas diseñadas para hacer que la calidad del software sea medible y repetible."
+    },
+    "featured": {
+      "eyebrow": "Proyectos Destacados",
+      "veridatai": {
+        "badge": "Principal",
+        "name": "VeridatAI",
+        "description": "Una plataforma de validación de datos asistida por IA y automatización de pruebas que verifica los resultados de la aplicación contra conjuntos de datos esperados, detecta anomalías automáticamente y reduce significativamente el tiempo de revisión manual de regresión en ciclos de lanzamiento.",
+        "liveLabel": "Ver en vivo",
+        "codeLabel": "Ver código",
+        "techStack": [
+          "Python",
+          "Selenium",
+          "Playwright",
+          "Docker",
+          "CI/CD",
+          "OpenAI API"
+        ]
+      },
+      "atomicBuilder": {
+        "badge": "Herramienta Interna",
+        "name": "Atomic Builder",
+        "description": "Un constructor de marcos de automatización basado en componentes que permite a los equipos de QA ensamblar módulos de prueba reutilizables a través de una interfaz visual, generando código mantenible del Modelo de Objeto de Página y reduciendo significativamente el tiempo de configuración de nuevas suites.",
+        "liveLabel": "Ver en vivo",
+        "codeLabel": "Ver código",
+        "techStack": [
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Jest",
+          "REST APIs"
+        ]
+      }
+    },
+    "details": {
+      "eyebrow": "Más Proyectos",
+      "title": "Proyectos adicionales y herramientas internas",
+      "subtitle": "Suites de automatización, marcos de API y paneles de análisis construidos junto con el trabajo principal para fortalecer la cobertura de pruebas y la confianza en los lanzamientos.",
+      "allLabel": "Todos",
+      "viewLabel": "Ver proyecto",
+      "items": [
+        {
+          "title": "E-commerce Regression Suite",
+          "category": "Automation",
+          "description": "An end-to-end Selenium and Playwright suite covering checkout, cart, and payment flows across three storefront brands, cutting release-day regression time from days to hours.",
+          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/9eed3146eaee4c1c87e446a617633eca.jpg",
+          "tags": [
+            "Playwright",
+            "TypeScript",
+            "CI/CD"
+          ]
+        },
+        {
+          "title": "API Contract Testing Framework",
+          "category": "API Testing",
+          "description": "A contract-testing framework validating request and response schemas across microservices, catching breaking changes before they reach staging.",
+          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/43d9d75fc64547ee98b1449ffd61d05c.jpg",
+          "tags": [
+            "Postman",
+            "Newman",
+            "JSON Schema"
+          ]
+        },
+        {
+          "title": "Mobile QA Automation Pipeline",
+          "category": "Mobile",
+          "description": "An Appium-driven automation pipeline running cross-device smoke and regression suites on every pull request for a consumer mobile app.",
+          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/6a92eb028a334f7db8711bc931340394.jpg",
+          "tags": [
+            "Appium",
+            "Java",
+            "BrowserStack"
+          ]
+        },
+        {
+          "title": "Performance Load Testing Dashboard",
+          "category": "Performance",
+          "description": "A JMeter-based load testing setup with a live Grafana dashboard tracking response time, throughput, and error rate under simulated peak traffic.",
+          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/df4b8282c11e4537bc78776b2da504ab.jpg",
+          "tags": [
+            "JMeter",
+            "Grafana",
+            "InfluxDB"
+          ]
+        },
+        {
+          "title": "Defect Analytics Dashboard",
+          "category": "Analytics",
+          "description": "An internal dashboard aggregating defect trends from Jira, surfacing flaky-test hotspots and recurring root causes for sprint retrospectives.",
+          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/c7c0422183df463c8084c424f67807ae.jpg",
+          "tags": [
+            "Jira API",
+            "Python",
+            "Power BI"
+          ]
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Tienes un producto que necesita pruebas impecables?",
+      "subtitle": "Hablemos sobre cómo un SDET dedicado puede optimizar tu ciclo de lanzamiento y aumentar la confianza en cada despliegue.",
+      "button": "Ponte en contacto"
+    }
+  },
+  "skillsPage": {
+    "hero": {
+      "eyebrow": "Habilidades y Herramientas",
+      "titleAccent": "Ingeniería de calidad,",
+      "title": "construida sobre un stack de automatización profundo",
+      "subtitle": "Un desglose de los frameworks, herramientas y competencias clave en las que confío para diseñar estrategias de prueba resilientes y entregar automatización que escala con el producto."
+    },
+    "skillsGrid": {
+      "eyebrow": "Experiencia Central",
+      "title": "Habilidades organizadas por disciplina",
+      "subtitle": "Desde automatización de UI hasta pruebas de rendimiento y seguridad, aquí está el rango completo de lo que aporto a un equipo de QA.",
+      "categories": [
+        {
+          "category": "Test Automation",
+          "skills": [
+            "Selenium WebDriver",
+            "Playwright",
+            "Cypress",
+            "Appium",
+            "TestNG",
+            "JUnit 5"
+          ]
+        },
+        {
+          "category": "API & Backend Testing",
+          "skills": [
+            "REST Assured",
+            "Postman",
+            "SoapUI",
+            "GraphQL Testing",
+            "Contract Testing"
+          ]
+        },
+        {
+          "category": "CI/CD & DevOps",
+          "skills": [
+            "Jenkins",
+            "GitHub Actions",
+            "Docker",
+            "Kubernetes",
+            "Azure DevOps"
+          ]
+        },
+        {
+          "category": "Programming & Scripting",
+          "skills": [
+            "Java",
+            "Python",
+            "JavaScript/TypeScript",
+            "SQL",
+            "Bash/Shell"
+          ]
+        },
+        {
+          "category": "Performance & Security",
+          "skills": [
+            "JMeter",
+            "Gatling",
+            "k6",
+            "OWASP ZAP",
+            "Load Testing"
+          ]
+        },
+        {
+          "category": "Quality Practices",
+          "skills": [
+            "Test Strategy",
+            "BDD/Cucumber",
+            "Risk-Based Testing",
+            "Mentoring",
+            "Agile/Scrum"
+          ]
+        }
+      ]
+    },
+    "tools": {
+      "eyebrow": "Herramientas Diarias",
+      "title": "Herramientas con las que trabajo cada semana",
+      "subtitle": "Una mirada detallada a las plataformas y utilidades que potencian mis pipelines de automatización, desde el diseño de pruebas hasta la aprobación de lanzamiento.",
+      "items": [
+        {
+          "name": "Selenium WebDriver",
+          "category": "Automation"
+        },
+        {
+          "name": "Playwright",
+          "category": "Automation"
+        },
+        {
+          "name": "Cypress",
+          "category": "Automation"
+        },
+        {
+          "name": "Postman",
+          "category": "API Testing"
+        },
+        {
+          "name": "REST Assured",
+          "category": "API Testing"
+        },
+        {
+          "name": "Jenkins",
+          "category": "CI/CD"
+        },
+        {
+          "name": "GitHub Actions",
+          "category": "CI/CD"
+        },
+        {
+          "name": "Docker",
+          "category": "Cloud & Containers"
+        },
+        {
+          "name": "Kubernetes",
+          "category": "Cloud & Containers"
+        },
+        {
+          "name": "Git",
+          "category": "Version Control"
+        },
+        {
+          "name": "JIRA",
+          "category": "Test Management"
+        },
+        {
+          "name": "TestRail",
+          "category": "Test Management"
+        }
+      ]
+    },
+    "proficiencies": {
+      "eyebrow": "Mapa de Competencias",
+      "title": "Dónde aporto más valor",
+      "subtitle": "Una vista autoevaluada de la profundidad de competencia en las áreas que más importan para un rol SDET moderno.",
+      "items": [
+        {
+          "label": "Test Automation Frameworks",
+          "value": 95
+        },
+        {
+          "label": "API & Backend Testing",
+          "value": 90
+        },
+        {
+          "label": "CI/CD Pipeline Engineering",
+          "value": 85
+        },
+        {
+          "label": "Performance & Load Testing",
+          "value": 80
+        },
+        {
+          "label": "Programming (Java/Python)",
+          "value": 88
+        },
+        {
+          "label": "Leadership & Mentoring",
+          "value": 82
+        }
+      ]
+    },
+    "closing": {
+      "title": "Ve estas habilidades aplicadas en la práctica",
+      "subtitle": "Explora los proyectos donde estas herramientas y frameworks se unieron para resolver desafíos reales de calidad.",
+      "cta": "Ver Proyectos"
+    }
+  },
+  "experience": {
+    "meta": {
+      "eyebrow": "Trayectoria Profesional",
+      "title": "Experiencia Laboral",
+      "subtitle": "Un historial de construcción de prácticas de ingeniería de calidad centradas en automatización en equipos de fintech, SaaS y plataformas."
+    },
+    "timeline": {
+      "eyebrow": "Dónde He Trabajado",
+      "title": "Línea de Tiempo Profesional",
+      "subtitle": "Cada rol afiló una arista diferente de mi oficio, desde disciplina de pruebas manuales hasta arquitectura de automatización a escala completa y liderazgo de equipo.",
+      "items": [
+        {
+          "company": "VeridatAI",
+          "role": "Senior SDET",
+          "period": "Jan 2023 – Present",
+          "summary": "Leading quality engineering for an AI-driven data verification platform, owning the end-to-end test automation strategy across web, API and data pipelines.",
+          "responsibilities": [
+            "Architected a Playwright and TypeScript automation framework covering UI, API and data validation layers",
+            "Embedded automated test gates into CI/CD pipelines to catch regressions before they reach staging",
+            "Partnered with product and engineering to define acceptance criteria and testability requirements early",
+            "Mentored two junior QA engineers on automation patterns and debugging strategy",
+            "Introduced contract testing to keep microservices in sync across releases"
+          ]
+        },
+        {
+          "company": "Atomic Builder",
+          "role": "QA Automation Engineer",
+          "period": "Jun 2021 – Dec 2022",
+          "summary": "Owned test strategy for a low-code app generation platform, balancing fast iteration cycles with reliable release quality.",
+          "responsibilities": [
+            "Built a reusable Cypress and Jest test suite shared across multiple product squads",
+            "Designed a visual regression testing pipeline for generated UI output",
+            "Reduced flaky test incidents by introducing retry-aware, deterministic test fixtures",
+            "Collaborated directly with designers to validate generated layouts against design specs",
+            "Documented test strategy and onboarding guides for new engineers"
+          ]
+        },
+        {
+          "company": "NetSol Technologies",
+          "role": "QA Engineer",
+          "period": "Aug 2019 – May 2021",
+          "summary": "Delivered functional and regression testing for enterprise leasing and finance software used by global banking clients.",
+          "responsibilities": [
+            "Wrote and executed structured test plans for complex financial workflows",
+            "Automated core regression suites using Selenium WebDriver and Java",
+            "Logged and triaged defects in close coordination with developers and business analysts",
+            "Performed cross-browser and localization testing for international client rollouts",
+            "Contributed to the shift from manual-only to hybrid automated regression cycles"
+          ]
+        },
+        {
+          "company": "TechVantage Solutions",
+          "role": "Associate QA Engineer",
+          "period": "Jul 2018 – Jul 2019",
+          "summary": "Started my QA career validating web and mobile applications, building the fundamentals that now anchor my automation practice.",
+          "responsibilities": [
+            "Executed manual test cases across web and Android applications",
+            "Authored clear, reproducible bug reports with severity and priority classification",
+            "Assisted in building the team's first smoke test automation scripts",
+            "Supported sprint-level regression testing under tight release timelines",
+            "Learned foundational API testing using Postman and REST Assured"
+          ]
+        }
+      ]
+    },
+    "highlights": {
+      "eyebrow": "Impacto",
+      "title": "Logros Clave",
+      "subtitle": "Momentos en los que transformé la ingeniería de calidad de una ocurrencia tardía a una ventaja competitiva.",
+      "items": [
+        {
+          "title": "Framework Architect",
+          "description": "Designed and shipped a reusable, cross-team automation framework now adopted as the default testing standard at VeridatAI."
+        },
+        {
+          "title": "CI/CD Quality Gates",
+          "description": "Embedded automated regression and smoke suites directly into deployment pipelines, catching defects before release instead of after."
+        },
+        {
+          "title": "Cross-Team Mentorship",
+          "description": "Coached junior QA engineers on automation design patterns, debugging discipline and sustainable test maintenance."
+        },
+        {
+          "title": "Visual Regression Pipeline",
+          "description": "Built a dedicated visual testing pipeline at Atomic Builder to protect generated UI output from unintended layout drift."
+        },
+        {
+          "title": "Process Transformation",
+          "description": "Led the transition from manual-heavy regression cycles to a hybrid automation strategy at NetSol Technologies."
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Interesado en trabajar juntos?",
+      "subtitle": "Siempre estoy abierto a discutir desafíos de ingeniería de calidad, estrategia de automatización u nuevas oportunidades.",
+      "button": "Ponte en contacto"
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Acerca de Rao Muhammad Ali",
+      "titlePrefix": "Construyendo calidad en cada",
+      "titleHighlight": "pipeline de lanzamiento",
+      "subtitle": "Un SDET e Ingeniero de QA que trata las pruebas como una disciplina de ingeniería, no como una ocurrencia tardía, diseñando frameworks de automatización que detectan regresiones antes de que lleguen a producción."
+    },
+    "summary": {
+      "eyebrow": "Resumen Profesional",
+      "title": "Centrado en automatización, obsesionado con la calidad, enfocado en la entrega",
+      "bio1": "Soy Rao Muhammad Ali, un Ingeniero de Desarrollo de Software en Pruebas que construye sistemas de automatización resilientes y mantenibles en capas web, API y de rendimiento. Mi trabajo abarca diseño de arquitecturas de prueba, su integración en pipelines CI/CD, y colaboración cercana con equipos de desarrollo para que la calidad se valide continuamente, no se agregue al final.",
+      "bio2": "He entregado estrategia de pruebas para productos como VeridatAI y Atomic Builder, llevándolos de brechas de QA manual a suites de regresión automatizadas con cobertura medible. Me importa el código de prueba legible, bucles de retroalimentación rápidos y construir herramientas que hagan que todo el equipo esté más confiado en lo que entregan.",
+      "metrics": [
+        {
+          "type": "focus",
+          "value": "Test Automation",
+          "label": "Primary Discipline"
+        },
+        {
+          "type": "projects",
+          "value": "2",
+          "label": "Flagship Products Shipped"
+        },
+        {
+          "type": "stack",
+          "value": "Full-Stack QA",
+          "label": "UI, API & Performance Coverage"
+        },
+        {
+          "type": "delivery",
+          "value": "CI/CD",
+          "label": "Pipeline-Integrated Testing"
+        }
+      ]
+    },
+    "education": {
+      "eyebrow": "Educación",
+      "title": "Fundación académica",
+      "subtitle": "Una formación formal en ciencias de la computación combinada con especialización continua y autodidacta en ingeniería de pruebas.",
+      "items": [
+        {
+          "degree": "BS in Computer Science",
+          "institution": "National University of Computer & Emerging Sciences",
+          "period": "2017 — 2021",
+          "description": "Focused coursework in software engineering, databases, and distributed systems, with a final-year project centered on automated test tooling for web applications."
+        },
+        {
+          "degree": "Intermediate in Pre-Engineering",
+          "institution": "Punjab College of Science",
+          "period": "2015 — 2017",
+          "description": "Built the mathematics and analytical problem-solving foundation that later shaped a methodical, metrics-driven approach to quality engineering."
+        },
+        {
+          "degree": "Continuous Specialization in Test Automation",
+          "institution": "Self-directed & industry training",
+          "period": "2021 — Present",
+          "description": "Ongoing deep-dives into automation frameworks, API testing, performance engineering, and CI/CD integration, kept current through hands-on project work."
+        }
+      ]
+    },
+    "awards": {
+      "eyebrow": "Premios y Liderazgo",
+      "title": "Reconocimiento e impacto más allá del conjunto de pruebas",
+      "subtitle": "Contribuciones que se extendieron más allá de la entrega individual hacia mentoría, innovación y comunidad.",
+      "items": [
+        {
+          "type": "star",
+          "title": "Quality Champion Award",
+          "description": "Recognized for reducing production escape rate through a redesigned automated regression suite.",
+          "year": "2023"
+        },
+        {
+          "type": "activity",
+          "title": "Automation Innovation Award",
+          "description": "Awarded for building a reusable framework that cut test maintenance time significantly across two products.",
+          "year": "2023"
+        },
+        {
+          "type": "leadership",
+          "title": "QA Mentorship Lead",
+          "description": "Guided junior QA engineers through automation fundamentals, code review practices, and test strategy design.",
+          "year": "2022"
+        },
+        {
+          "type": "sparkle",
+          "title": "Hackathon Finalist, Automation Challenge",
+          "description": "Reached the finals building a rapid API test harness under a 24-hour constraint.",
+          "year": "2022"
+        },
+        {
+          "type": "star",
+          "title": "Community Speaker",
+          "description": "Presented on shift-left testing practices at a local QA and software testing meetup.",
+          "year": "2024"
+        }
+      ]
+    },
+    "certifications": {
+      "eyebrow": "Certificaciones",
+      "title": "Experiencia verificada",
+      "subtitle": "Credenciales que respaldan las herramientas y prácticas utilizadas día a día.",
+      "items": [
+        {
+          "name": "ISTQB Certified Tester, Foundation Level",
+          "issuer": "ISTQB",
+          "date": "Issued 2022",
+          "credentialUrl": "#",
+          "credentialLabel": "View Credential"
+        },
+        {
+          "name": "Selenium WebDriver with Java",
+          "issuer": "Udemy",
+          "date": "Issued 2021",
+          "credentialUrl": "#",
+          "credentialLabel": "View Credential"
+        },
+        {
+          "name": "API Testing with Postman",
+          "issuer": "Postman Academy",
+          "date": "Issued 2022",
+          "credentialUrl": "#",
+          "credentialLabel": "View Credential"
+        },
+        {
+          "name": "AWS Certified Cloud Practitioner",
+          "issuer": "Amazon Web Services",
+          "date": "Issued 2023",
+          "credentialUrl": "#",
+          "credentialLabel": "View Credential"
+        },
+        {
+          "name": "Certified Agile Tester",
+          "issuer": "iSQI",
+          "date": "Issued 2023",
+          "credentialUrl": "#",
+          "credentialLabel": "View Credential"
+        }
+      ]
+    },
+    "cta": {
+      "title": "¿Interesado en trabajar juntos?",
+      "subtitle": "Hablemos sobre cómo la automatización disciplinada de pruebas puede reducir riesgos en tu próximo lanzamiento.",
+      "button": "Ponte en Contacto"
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Ingeniero SDET y QA",
+      "title": "Construyendo Calidad en Cada Lanzamiento",
+      "subtitle": "Diseño y construyo sistemas de calidad orientados a la automatización, desde marcos de prueba resilientes hasta tuberías CI/CD, para que los equipos puedan lanzar más rápido con confianza.",
+      "primaryCta": "Ver Proyectos",
+      "secondaryCta": "Ver Currículum",
+      "terminal": {
+        "title": "regression-suite.run",
+        "lines": [
+          "Running full regression suite...",
+          "128 scenarios executed across 4 browsers",
+          "API contract tests passed",
+          "Pipeline gate: build approved for release"
+        ]
+      },
+      "badges": [
+        "Selenium",
+        "Playwright",
+        "Python",
+        "CI/CD",
+        "API Testing",
+        "Cypress"
+      ]
+    },
+    "summary": {
+      "eyebrow": "Resumen Profesional",
+      "title": "Ingeniería de calidad con mentalidad de producto",
+      "paragraph1": "Soy Rao Muhammad Ali, un Ingeniero de Desarrollo de Software en Pruebas que trabaja estrechamente con desarrolladores y equipos de producto para construir calidad en el ciclo de vida del desarrollo en lugar de añadirla al final.",
+      "paragraph2": "Mi trabajo abarca estrategia de pruebas, arquitectura de automatización, pruebas de API e interfaz de usuario, e integración CI/CD, con enfoque en marcos que sean mantenibles, rápidos y realmente confiables para los equipos de ingeniería.",
+      "highlights": [
+        {
+          "label": "Test Automation",
+          "description": "Scalable Selenium and Playwright frameworks built for long-term maintainability."
+        },
+        {
+          "label": "CI/CD Integration",
+          "description": "Automated gates wired into pipelines so regressions never reach production."
+        },
+        {
+          "label": "Quality Strategy",
+          "description": "Risk-based planning that focuses testing effort where it matters most."
+        }
+      ]
+    },
+    "projects": {
+      "eyebrow": "Trabajo Destacado",
+      "title": "Proyectos que priorizan la automatización",
+      "subtitle": "Una mirada a dos plataformas donde lideré el esfuerzo de ingeniería de calidad de principio a fin.",
+      "cta": "Ver Todos los Proyectos",
+      "items": [
+        {
+          "name": "VeridatAI",
+          "role": "QA Lead",
+          "description": "An AI-assisted data validation platform. I architected the end-to-end test strategy covering data pipeline accuracy, API contracts, and model output verification.",
+          "stack": "Python · Pytest · Postman · GitHub Actions",
+          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Atomic%20Builder"
+        },
+        {
+          "name": "Atomic Builder",
+          "role": "SDET",
+          "description": "A no-code website builder platform. I built a Playwright-driven UI automation suite alongside API test coverage to keep rapid feature releases safe and stable.",
+          "stack": "TypeScript · Playwright · Docker · CI/CD",
+          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/bb4e8ff7e2be458984bbcce6b5661a07.jpg"
+        }
+      ]
+    },
+    "expertise": {
+      "eyebrow": "Experiencia Principal",
+      "title": "Herramientas y prácticas en las que confío diariamente",
+      "subtitle": "Una vista rápida de las áreas donde agrego más valor a un equipo.",
+      "cta": "Ver Conjunto de Habilidades Completo",
+      "items": [
+        {
+          "title": "Automation Frameworks",
+          "description": "Designing modular, reusable Selenium and Playwright suites built to scale with the product."
+        },
+        {
+          "title": "Version Control Workflows",
+          "description": "Clean branching strategies and PR review practices that keep test suites reliable."
+        },
+        {
+          "title": "API & Contract Testing",
+          "description": "Postman and Pytest-based coverage that catches backend regressions before release."
+        },
+        {
+          "title": "CI/CD Pipelines",
+          "description": "Wiring automated test gates into GitHub Actions and Jenkins pipelines."
+        },
+        {
+          "title": "Test Management",
+          "description": "Structuring test plans, traceability, and reporting that stakeholders can trust."
+        },
+        {
+          "title": "Exploratory & Manual QA",
+          "description": "Deep, scenario-driven testing for the edge cases automation alone won't catch."
+        }
+      ]
+    },
+    "credentials": {
+      "eyebrow": "Credenciales",
+      "title": "Educación, certificaciones y reconocimiento",
+      "subtitle": "La base detrás del trabajo: educación formal, certificaciones de la industria y reconocimiento de liderazgo.",
+      "educationLabel": "Educación",
+      "educationDegree": "Licenciatura en Ingeniería de Software",
+      "educationInstitution": "Universidad de Ingeniería y Tecnología",
+      "educationPeriod": "2018 – 2022",
+      "certificationsLabel": "Certificaciones",
+      "awardsLabel": "Premios y Liderazgo",
+      "certifications": [
+        "ISTQB Certified Tester, Foundation Level",
+        "Certified Selenium Automation Professional",
+        "Postman API Fundamentals Student Expert",
+        "AWS Cloud Practitioner"
+      ],
+      "awards": [
+        "Led the QA guild, mentoring junior testers on automation best practices",
+        "Recognized for driving a company-wide test automation rollout",
+        "Speaker at a regional quality engineering meetup"
+      ]
+    },
+    "contact": {
+      "eyebrow": "Conectemos",
+      "title": "¿Tienes un desafío de calidad que valga la pena resolver?",
+      "subtitle": "Siempre estoy abierto a discutir estrategia de automatización, nuevas oportunidades o colaborar en un proyecto. Comunícate directamente o conéctate en LinkedIn.",
+      "emailLabel": "Envíame un Correo",
+      "email": "rao.muhammadali.qa@gmail.com",
+      "linkedinLabel": "Conectar en LinkedIn"
+    }
+  }
+}
