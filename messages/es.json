@@ -30,17 +30,19 @@
   "projects": {
     "header": {
       "eyebrow": "Trabajo Seleccionado",
-      "title": "Proyectos construidos para detectar errores antes que los usuarios",
-      "subtitle": "Una colección de marcos de automatización, plataformas de pruebas asistidas por IA y herramientas internas diseñadas para hacer que la calidad del software sea medible y repetible."
+      "title": "Proyectos diseñados para detectar errores antes que los usuarios",
+      "subtitle": "Una colección de frameworks de automatización, plataformas de testing asistidas por IA y herramientas internas construidas para hacer la calidad del software medible y repetible.",
+      "imageQuery": "pantallas de espacio de trabajo de desarrollo de software"
     },
     "featured": {
       "eyebrow": "Proyectos Destacados",
       "veridatai": {
         "badge": "Principal",
         "name": "VeridatAI",
-        "description": "Una plataforma de validación de datos asistida por IA y automatización de pruebas que verifica los resultados de la aplicación contra conjuntos de datos esperados, detecta anomalías automáticamente y reduce significativamente el tiempo de revisión manual de regresión en ciclos de lanzamiento.",
+        "description": "Una plataforma de validación de datos asistida por IA y automatización de testing que verifica cruzadamente los resultados de la aplicación contra conjuntos de datos esperados, detecta anomalías automáticamente y reduce significativamente el tiempo de revisión manual de regresión en ciclos de lanzamiento.",
         "liveLabel": "Ver en vivo",
         "codeLabel": "Ver código",
+        "imageQuery": "panel de validación de datos con IA",
         "techStack": [
           "Python",
           "Selenium",
@@ -53,9 +55,10 @@
       "atomicBuilder": {
         "badge": "Herramienta Interna",
         "name": "Atomic Builder",
-        "description": "Un constructor de marcos de automatización basado en componentes que permite a los equipos de QA ensamblar módulos de prueba reutilizables a través de una interfaz visual, generando código mantenible del Modelo de Objeto de Página y reduciendo significativamente el tiempo de configuración de nuevas suites.",
+        "description": "Un constructor de frameworks de automatización basado en componentes que permite a los equipos de QA ensamblar módulos de testing reutilizables a través de una interfaz visual, generando código mantenible del Page Object Model y reduciendo significativamente el tiempo de configuración de nuevas suites.",
         "liveLabel": "Ver en vivo",
         "codeLabel": "Ver código",
+        "imageQuery": "interfaz visual del constructor de automatización",
         "techStack": [
           "TypeScript",
           "React",
@@ -68,7 +71,7 @@
     "details": {
       "eyebrow": "Más Proyectos",
       "title": "Proyectos adicionales y herramientas internas",
-      "subtitle": "Suites de automatización, marcos de API y paneles de análisis construidos junto con el trabajo principal para fortalecer la cobertura de pruebas y la confianza en los lanzamientos.",
+      "subtitle": "Suites de automatización, frameworks de API y dashboards de análisis construidos junto al trabajo principal para fortalecer la cobertura de testing y la confianza en los lanzamientos.",
       "allLabel": "Todos",
       "viewLabel": "Ver proyecto",
       "items": [
@@ -130,7 +133,7 @@
       ]
     },
     "cta": {
-      "title": "¿Tienes un producto que necesita pruebas impecables?",
+      "title": "¿Tienes un producto que necesita testing impecable?",
       "subtitle": "Hablemos sobre cómo un SDET dedicado puede optimizar tu ciclo de lanzamiento y aumentar la confianza en cada despliegue.",
       "button": "Ponte en contacto"
     }
@@ -139,13 +142,14 @@
     "hero": {
       "eyebrow": "Habilidades y Herramientas",
       "titleAccent": "Ingeniería de calidad,",
-      "title": "construida sobre un stack de automatización profundo",
-      "subtitle": "Un desglose de los frameworks, herramientas y competencias clave en las que confío para diseñar estrategias de prueba resilientes y entregar automatización que escala con el producto."
+      "title": "construida sobre un stack profundo de automatización",
+      "subtitle": "Un desglose de los frameworks, herramientas y competencias principales en las que confío para diseñar estrategias de testing resilientes y entregar automatización que escala con el producto.",
+      "imageQuery": "editor de código con scripts de automatización"
     },
     "skillsGrid": {
-      "eyebrow": "Experiencia Central",
+      "eyebrow": "Experiencia Principal",
       "title": "Habilidades organizadas por disciplina",
-      "subtitle": "Desde automatización de UI hasta pruebas de rendimiento y seguridad, aquí está el rango completo de lo que aporto a un equipo de QA.",
+      "subtitle": "Desde automatización de UI hasta testing de rendimiento y seguridad, aquí está el rango completo de lo que aporto a un equipo de QA.",
       "categories": [
         {
           "category": "Test Automation",
@@ -211,64 +215,76 @@
       ]
     },
     "tools": {
-      "eyebrow": "Herramientas Diarias",
+      "eyebrow": "Kit de Herramientas Diarias",
       "title": "Herramientas con las que trabajo cada semana",
-      "subtitle": "Una mirada detallada a las plataformas y utilidades que potencian mis pipelines de automatización, desde el diseño de pruebas hasta la aprobación de lanzamiento.",
+      "subtitle": "Una vista detallada de las plataformas y utilidades que impulsan mis pipelines de automatización, desde el diseño de tests hasta la aprobación de lanzamiento.",
       "items": [
         {
           "name": "Selenium WebDriver",
-          "category": "Automation"
+          "category": "Automation",
+          "imageQuery": "selenium webdriver logo automation"
         },
         {
           "name": "Playwright",
-          "category": "Automation"
+          "category": "Automation",
+          "imageQuery": "playwright testing tool"
         },
         {
           "name": "Cypress",
-          "category": "Automation"
+          "category": "Automation",
+          "imageQuery": "cypress testing framework"
         },
         {
           "name": "Postman",
-          "category": "API Testing"
+          "category": "API Testing",
+          "imageQuery": "postman api testing tool"
         },
         {
           "name": "REST Assured",
-          "category": "API Testing"
+          "category": "API Testing",
+          "imageQuery": "rest api testing code"
         },
         {
           "name": "Jenkins",
-          "category": "CI/CD"
+          "category": "CI/CD",
+          "imageQuery": "jenkins ci cd pipeline"
         },
         {
           "name": "GitHub Actions",
-          "category": "CI/CD"
+          "category": "CI/CD",
+          "imageQuery": "github actions workflow"
         },
         {
           "name": "Docker",
-          "category": "Cloud & Containers"
+          "category": "Cloud & Containers",
+          "imageQuery": "docker containers cloud"
         },
         {
           "name": "Kubernetes",
-          "category": "Cloud & Containers"
+          "category": "Cloud & Containers",
+          "imageQuery": "kubernetes cluster cloud"
         },
         {
           "name": "Git",
-          "category": "Version Control"
+          "category": "Version Control",
+          "imageQuery": "git version control branches"
         },
         {
           "name": "JIRA",
-          "category": "Test Management"
+          "category": "Test Management",
+          "imageQuery": "jira project management board"
         },
         {
           "name": "TestRail",
-          "category": "Test Management"
+          "category": "Test Management",
+          "imageQuery": "test case management software"
         }
       ]
     },
     "proficiencies": {
       "eyebrow": "Mapa de Competencias",
       "title": "Dónde aporto más valor",
-      "subtitle": "Una vista autoevaluada de la profundidad de competencia en las áreas que más importan para un rol SDET moderno.",
+      "subtitle": "Una vista autoevaluada de la profundidad de competencia en las áreas que más importan en un rol moderno de SDET.",
       "items": [
         {
           "label": "Test Automation Frameworks",
@@ -297,7 +313,7 @@
       ]
     },
     "closing": {
-      "title": "Ve estas habilidades aplicadas en la práctica",
+      "title": "Ver estas habilidades aplicadas en la práctica",
       "subtitle": "Explora los proyectos donde estas herramientas y frameworks se unieron para resolver desafíos reales de calidad.",
       "cta": "Ver Proyectos"
     }
@@ -306,7 +322,8 @@
     "meta": {
       "eyebrow": "Trayectoria Profesional",
       "title": "Experiencia Laboral",
-      "subtitle": "Un historial de construcción de prácticas de ingeniería de calidad centradas en automatización en equipos de fintech, SaaS y plataformas."
+      "subtitle": "Un historial de construcción de prácticas de ingeniería de calidad automatizadas en equipos fintech, SaaS y plataforma.",
+      "imageQuery": "reunión de equipo colaboración en oficina"
     },
     "timeline": {
       "eyebrow": "Dónde He Trabajado",
@@ -324,7 +341,8 @@
             "Partnered with product and engineering to define acceptance criteria and testability requirements early",
             "Mentored two junior QA engineers on automation patterns and debugging strategy",
             "Introduced contract testing to keep microservices in sync across releases"
-          ]
+          ],
+          "imageQuery": "ai data platform engineering"
         },
         {
           "company": "Atomic Builder",
@@ -337,7 +355,8 @@
             "Reduced flaky test incidents by introducing retry-aware, deterministic test fixtures",
             "Collaborated directly with designers to validate generated layouts against design specs",
             "Documented test strategy and onboarding guides for new engineers"
-          ]
+          ],
+          "imageQuery": "low code platform development"
         },
         {
           "company": "NetSol Technologies",
@@ -350,7 +369,8 @@
             "Logged and triaged defects in close coordination with developers and business analysts",
             "Performed cross-browser and localization testing for international client rollouts",
             "Contributed to the shift from manual-only to hybrid automated regression cycles"
-          ]
+          ],
+          "imageQuery": "enterprise finance software office"
         },
         {
           "company": "TechVantage Solutions",
@@ -363,14 +383,15 @@
             "Assisted in building the team's first smoke test automation scripts",
             "Supported sprint-level regression testing under tight release timelines",
             "Learned foundational API testing using Postman and REST Assured"
-          ]
+          ],
+          "imageQuery": "mobile app testing team"
         }
       ]
     },
     "highlights": {
       "eyebrow": "Impacto",
       "title": "Logros Clave",
-      "subtitle": "Momentos en los que transformé la ingeniería de calidad de una ocurrencia tardía a una ventaja competitiva.",
+      "subtitle": "Momentos en los que transformé la ingeniería de calidad de un complemento a una ventaja competitiva.",
       "items": [
         {
           "title": "Framework Architect",
@@ -405,13 +426,14 @@
       "eyebrow": "Acerca de Rao Muhammad Ali",
       "titlePrefix": "Construyendo calidad en cada",
       "titleHighlight": "pipeline de lanzamiento",
-      "subtitle": "Un SDET e Ingeniero de QA que trata las pruebas como una disciplina de ingeniería, no como una ocurrencia tardía, diseñando frameworks de automatización que detectan regresiones antes de que lleguen a producción."
+      "subtitle": "Un SDET e Ingeniero de QA que trata las pruebas como una disciplina de ingeniería, no como un complemento, diseñando frameworks de automatización que detectan regresiones antes de que lleguen a producción.",
+      "imageQuery": "retrato profesional de ingeniero de software"
     },
     "summary": {
       "eyebrow": "Resumen Profesional",
-      "title": "Centrado en automatización, obsesionado con la calidad, enfocado en la entrega",
-      "bio1": "Soy Rao Muhammad Ali, un Ingeniero de Desarrollo de Software en Pruebas que construye sistemas de automatización resilientes y mantenibles en capas web, API y de rendimiento. Mi trabajo abarca diseño de arquitecturas de prueba, su integración en pipelines CI/CD, y colaboración cercana con equipos de desarrollo para que la calidad se valide continuamente, no se agregue al final.",
-      "bio2": "He entregado estrategia de pruebas para productos como VeridatAI y Atomic Builder, llevándolos de brechas de QA manual a suites de regresión automatizadas con cobertura medible. Me importa el código de prueba legible, bucles de retroalimentación rápidos y construir herramientas que hagan que todo el equipo esté más confiado en lo que entregan.",
+      "title": "Automatización primero, obsesionado con la calidad, enfocado en la entrega",
+      "bio1": "Soy Rao Muhammad Ali, un Ingeniero de Software en Pruebas que construye sistemas de automatización resilientes y mantenibles en capas web, API y rendimiento. Mi trabajo abarca el diseño de arquitecturas de pruebas, su integración en pipelines CI/CD, y colaboración cercana con equipos de desarrollo para que la calidad se valide continuamente, no se agregue al final.",
+      "bio2": "He implementado estrategia de pruebas para productos como VeridatAI y Atomic Builder, llevándolos desde brechas de QA manual a suites de regresión automatizadas con cobertura medible. Me importa el código de prueba legible, ciclos de retroalimentación rápidos, y construir herramientas que hagan que todo el equipo esté más confiado en lo que envía.",
       "metrics": [
         {
           "type": "focus",
@@ -462,7 +484,7 @@
     },
     "awards": {
       "eyebrow": "Premios y Liderazgo",
-      "title": "Reconocimiento e impacto más allá del conjunto de pruebas",
+      "title": "Reconocimiento e impacto más allá de la suite de pruebas",
       "subtitle": "Contribuciones que se extendieron más allá de la entrega individual hacia mentoría, innovación y comunidad.",
       "items": [
         {
@@ -547,9 +569,9 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "Ingeniero SDET y QA",
+      "eyebrow": "SDET e Ingeniero de QA",
       "title": "Construyendo Calidad en Cada Lanzamiento",
-      "subtitle": "Diseño y construyo sistemas de calidad orientados a la automatización, desde marcos de prueba resilientes hasta tuberías CI/CD, para que los equipos puedan lanzar más rápido con confianza.",
+      "subtitle": "Diseño y construyo sistemas de calidad automatizados, desde frameworks de pruebas resilientes hasta pipelines CI/CD, para que los equipos puedan enviar más rápido con confianza.",
       "primaryCta": "Ver Proyectos",
       "secondaryCta": "Ver Currículum",
       "terminal": {
@@ -561,6 +583,7 @@
           "Pipeline gate: build approved for release"
         ]
       },
+      "imageQuery": "ingeniero de software codificando en escritorio",
       "badges": [
         "Selenium",
         "Playwright",
@@ -573,8 +596,8 @@
     "summary": {
       "eyebrow": "Resumen Profesional",
       "title": "Ingeniería de calidad con mentalidad de producto",
-      "paragraph1": "Soy Rao Muhammad Ali, un Ingeniero de Desarrollo de Software en Pruebas que trabaja estrechamente con desarrolladores y equipos de producto para construir calidad en el ciclo de vida del desarrollo en lugar de añadirla al final.",
-      "paragraph2": "Mi trabajo abarca estrategia de pruebas, arquitectura de automatización, pruebas de API e interfaz de usuario, e integración CI/CD, con enfoque en marcos que sean mantenibles, rápidos y realmente confiables para los equipos de ingeniería.",
+      "paragraph1": "Soy Rao Muhammad Ali, Ingeniero de Desarrollo de Software en Pruebas que trabaja en estrecha colaboración con desarrolladores y equipos de producto para integrar la calidad en el ciclo de desarrollo en lugar de añadirla al final.",
+      "paragraph2": "Mi trabajo abarca estrategia de pruebas, arquitectura de automatización, pruebas de API e interfaz de usuario, e integración de CI/CD, con enfoque en marcos que sean mantenibles, rápidos y genuinamente confiables para los equipos de ingeniería.",
       "highlights": [
         {
           "label": "Test Automation",
@@ -601,7 +624,7 @@
           "role": "QA Lead",
           "description": "An AI-assisted data validation platform. I architected the end-to-end test strategy covering data pipeline accuracy, API contracts, and model output verification.",
           "stack": "Python · Pytest · Postman · GitHub Actions",
-          "image": "https://api.dicebear.com/7.x/avataaars/svg?seed=Atomic%20Builder"
+          "imageQuery": "artificial intelligence data dashboard"
         },
         {
           "name": "Atomic Builder",
@@ -615,39 +638,45 @@
     "expertise": {
       "eyebrow": "Experiencia Principal",
       "title": "Herramientas y prácticas en las que confío diariamente",
-      "subtitle": "Una vista rápida de las áreas donde agrego más valor a un equipo.",
+      "subtitle": "Una vista rápida de las áreas donde aporto más valor a un equipo.",
       "cta": "Ver Conjunto de Habilidades Completo",
       "items": [
         {
           "title": "Automation Frameworks",
-          "description": "Designing modular, reusable Selenium and Playwright suites built to scale with the product."
+          "description": "Designing modular, reusable Selenium and Playwright suites built to scale with the product.",
+          "imageQuery": "automated testing framework code"
         },
         {
           "title": "Version Control Workflows",
-          "description": "Clean branching strategies and PR review practices that keep test suites reliable."
+          "description": "Clean branching strategies and PR review practices that keep test suites reliable.",
+          "imageQuery": "git version control branching"
         },
         {
           "title": "API & Contract Testing",
-          "description": "Postman and Pytest-based coverage that catches backend regressions before release."
+          "description": "Postman and Pytest-based coverage that catches backend regressions before release.",
+          "imageQuery": "api testing postman screen"
         },
         {
           "title": "CI/CD Pipelines",
-          "description": "Wiring automated test gates into GitHub Actions and Jenkins pipelines."
+          "description": "Wiring automated test gates into GitHub Actions and Jenkins pipelines.",
+          "imageQuery": "ci cd pipeline automation"
         },
         {
           "title": "Test Management",
-          "description": "Structuring test plans, traceability, and reporting that stakeholders can trust."
+          "description": "Structuring test plans, traceability, and reporting that stakeholders can trust.",
+          "imageQuery": "test management dashboard reports"
         },
         {
           "title": "Exploratory & Manual QA",
-          "description": "Deep, scenario-driven testing for the edge cases automation alone won't catch."
+          "description": "Deep, scenario-driven testing for the edge cases automation alone won't catch.",
+          "imageQuery": "manual software testing laptop"
         }
       ]
     },
     "credentials": {
       "eyebrow": "Credenciales",
       "title": "Educación, certificaciones y reconocimiento",
-      "subtitle": "La base detrás del trabajo: educación formal, certificaciones de la industria y reconocimiento de liderazgo.",
+      "subtitle": "La base del trabajo: educación formal, certificaciones de la industria y reconocimiento de liderazgo.",
       "educationLabel": "Educación",
       "educationDegree": "Licenciatura en Ingeniería de Software",
       "educationInstitution": "Universidad de Ingeniería y Tecnología",
