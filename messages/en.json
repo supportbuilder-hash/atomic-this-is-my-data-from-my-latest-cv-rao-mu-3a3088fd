@@ -619,7 +619,8 @@
           "label": "Quality Strategy",
           "description": "Risk-based planning that focuses testing effort where it matters most."
         }
-      ]
+      ],
+      "description": "Creative professional crafting thoughtful digital experiences through design and strategy."
     },
     "projects": {
       "eyebrow": "Featured Work",
@@ -641,7 +642,8 @@
           "stack": "TypeScript · Playwright · Docker · CI/CD",
           "imageQuery": "website builder drag drop editor"
         }
-      ]
+      ],
+      "viewAllLabel": "View All Projects"
     },
     "expertise": {
       "eyebrow": "Core Expertise",
@@ -701,7 +703,9 @@
         "Led the QA guild, mentoring junior testers on automation best practices",
         "Recognized for driving a company-wide test automation rollout",
         "Speaker at a regional quality engineering meetup"
-      ]
+      ],
+      "awardsTitle": "Recognition & Awards",
+      "certificationsTitle": "Certifications & Training"
     },
     "contact": {
       "eyebrow": "Let's Connect",

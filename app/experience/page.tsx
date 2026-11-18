@@ -47,7 +47,7 @@ function TimelineRow({
             isLeft ? "md:col-start-1 md:pr-12 md:text-right" : "md:col-start-2 md:pl-12"
           )}
         >
-          <div className="surface-elevated glass rounded-lg border border-border p-6 transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none">
+          <div className="surface-elevated glass rounded-2xl border border-border p-6 transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none">
             <div
               className={cn(
                 "mb-3 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-muted-foreground",
@@ -129,7 +129,7 @@ export default function ExperiencePage() {
         </Reveal>
       </section>
 
-      <section id="timeline" className="py-20 md:py-28">
+      <section id="timeline" className="py-24 md:py-32">
         <Reveal>
           <div className="mx-auto max-w-3xl px-6 text-center">
             <span className="text-xs font-medium uppercase tracking-wide text-primary">
@@ -157,9 +157,11 @@ export default function ExperiencePage() {
         </div>
       </section>
 
-      <section id="highlights" className="bg-card/40 py-20 md:py-28">
+      <section id="highlights" className="relative overflow-hidden bg-muted/40 py-24 md:py-32">
+        <div aria-hidden="true" className="pointer-events-none absolute -left-32 top-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
+        <div aria-hidden="true" className="pointer-events-none absolute -right-24 bottom-0 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
         <Reveal>
-          <div className="mx-auto max-w-3xl px-6 text-center">
+          <div className="relative mx-auto max-w-3xl px-6 text-center">
             <span className="text-xs font-medium uppercase tracking-wide text-primary">
               {t("experience.highlights.eyebrow")}
             </span>
@@ -177,7 +179,7 @@ export default function ExperiencePage() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-80px" }}
-          className="mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-6 px-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="relative mx-auto mt-14 grid max-w-6xl grid-cols-1 gap-6 px-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {highlightItems.map((item, i) => {
             const Icon = HIGHLIGHT_ICONS[i % HIGHLIGHT_ICONS.length] ?? Star;
@@ -185,8 +187,7 @@ export default function ExperiencePage() {
               <motion.div
                 key={item.title}
                 variants={fadeInUp}
-                whileHover={{ y: -4 }}
-                className="surface-elevated glass rounded-lg border border-border p-6 transition hover:shadow-lg motion-reduce:transition-none"
+                className="surface-elevated glass rounded-2xl border border-border p-6 transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
               >
                 <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
                   <Icon className="h-5 w-5" aria-hidden="true" />
@@ -203,9 +204,9 @@ export default function ExperiencePage() {
         </motion.div>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="py-24 md:py-32">
         <Reveal>
-          <div className="mx-auto max-w-4xl rounded-lg bg-gradient-brand px-8 py-14 text-center shadow-glow md:px-16">
+          <div className="mx-auto max-w-4xl rounded-2xl bg-gradient-brand px-8 py-14 text-center shadow-glow md:px-16">
             <h2 className="text-balance font-display text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl">
               {t("experience.cta.title")}
             </h2>

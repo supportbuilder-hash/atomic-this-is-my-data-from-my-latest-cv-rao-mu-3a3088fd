@@ -59,8 +59,10 @@ export default function HomePage() {
     <main className="overflow-x-clip">
       {/* HERO */}
       <Reveal>
-        <section className="relative bg-mesh pt-28 pb-24 md:pt-36 md:pb-32">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 md:grid-cols-2">
+        <section className="relative overflow-hidden bg-mesh pt-28 pb-24 md:pt-36 md:pb-32">
+          <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
+          <div aria-hidden="true" className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-accent/25 blur-3xl" />
+          <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-16 px-6 md:grid-cols-2">
             <div>
               <motion.span
                 initial="hidden"
@@ -77,7 +79,7 @@ export default function HomePage() {
                 animate="visible"
                 variants={fadeInUp}
                 transition={{ delay: 0.08 }}
-                className="mt-6 text-balance text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl"
+                className="mt-6 text-balance font-display text-4xl font-bold leading-[1.1] tracking-tight text-foreground md:text-6xl"
               >
                 <span className="text-gradient">{t("home.hero.title")}</span>
               </motion.h1>
@@ -101,14 +103,14 @@ export default function HomePage() {
               >
                 <Link
                   href="/projects"
-                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   {t("home.hero.primaryCta")}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
                 </Link>
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                  className="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                 >
                   <Download className="h-4 w-4" aria-hidden="true" />
                   {t("home.hero.secondaryCta")}
@@ -180,221 +182,218 @@ export default function HomePage() {
 
       {/* PROFESSIONAL SUMMARY */}
       <Reveal>
-        <section id="summary" className="bg-background py-20 md:py-28">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-6 md:grid-cols-2">
-            <div className="order-2 md:order-1">
-              <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+        <section id="summary" className="bg-background px-6 py-20 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-2xl text-center">
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 {t("home.summary.eyebrow")}
               </span>
-              <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+              <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
                 {t("home.summary.title")}
               </h2>
-              <p className="mt-5 text-pretty leading-relaxed text-muted-foreground">{t("home.summary.paragraph1")}</p>
-              <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">{t("home.summary.paragraph2")}</p>
+              <p className="mt-6 text-pretty leading-relaxed text-muted-foreground">{t("home.summary.description")}</p>
+            </div>
 
-              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-                {highlights.map((h, i) => (
-                  <Reveal key={i} delay={i * 0.08}>
-                    <div className="surface-elevated rounded-xl border border-border bg-card p-4">
-                      <p className="text-sm font-semibold text-foreground">{h.label}</p>
-                      <p className="mt-1 text-xs leading-relaxed text-muted-foreground">{h.description}</p>
-                    </div>
-                  </Reveal>
-                ))}
-              </div>
-            </div>
-            <div className="order-1 md:order-2">
-              <div className="overflow-hidden rounded-2xl border border-border shadow-glow ring-1 ring-border">
-                <img
-                  src="https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/7b61ab0b9380492bbe10c86a33c5c7d6.jpg"
-                  alt="QA engineer reviewing an automated test dashboard"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={staggerContainer}
+              className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4"
+            >
+              {highlights.map((h, i) => (
+                <motion.div
+                  key={i}
+                  variants={fadeInUp}
+                  className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
+                >
+                  <h3 className="font-display text-lg font-semibold text-foreground">{h.label}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{h.description}</p>
+                </motion.div>
+              ))}
+            </motion.div>
           </div>
         </section>
       </Reveal>
 
-      {/* FEATURED PROJECTS */}
+      {/* EXPERTISE */}
       <Reveal>
-        <section id="projects-preview" className="bg-muted/40 py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-              <div>
-                <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+        <section id="expertise" className="bg-muted/40 px-6 py-20 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <div className="mx-auto max-w-2xl text-center">
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
+                {t("home.expertise.eyebrow")}
+              </span>
+              <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
+                <span className="text-gradient">{t("home.expertise.title")}</span>
+              </h2>
+              <p className="mt-6 text-pretty leading-relaxed text-muted-foreground">{t("home.expertise.subtitle")}</p>
+            </div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={staggerContainer}
+              className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            >
+              {expertiseItems.map((item, i) => {
+                const Icon = EXPERTISE_ICONS[i % EXPERTISE_ICONS.length] ?? Terminal;
+                return (
+                  <motion.div
+                    key={i}
+                    variants={fadeInUp}
+                    className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
+                  >
+                    <div className="mb-4 inline-flex h-11 w-11 items-center justify-center rounded-lg bg-primary/10 text-primary">
+                      <Icon className="h-5 w-5" aria-hidden="true" />
+                    </div>
+                    <h3 className="font-display text-lg font-semibold text-foreground">{item.title}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+          </div>
+        </section>
+      </Reveal>
+
+      {/* PROJECTS PREVIEW */}
+      <Reveal>
+        <section id="projects-preview" className="bg-background px-6 py-20 md:py-28">
+          <div className="mx-auto max-w-6xl">
+            <div className="flex flex-wrap items-end justify-between gap-6">
+              <div className="max-w-xl">
+                <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                   {t("home.projects.eyebrow")}
                 </span>
-                <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
+                <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
                   {t("home.projects.title")}
                 </h2>
-                <p className="mt-3 max-w-xl text-pretty leading-relaxed text-muted-foreground">
-                  {t("home.projects.subtitle")}
-                </p>
               </div>
               <Link
                 href="/projects"
-                className="inline-flex shrink-0 items-center gap-2 rounded-lg border border-border bg-card px-5 py-2.5 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition hover:text-primary/80"
               >
-                {t("home.projects.cta")}
+                {t("home.projects.viewAllLabel")}
                 <ArrowRight className="h-4 w-4" aria-hidden="true" />
               </Link>
             </div>
 
-            <div className="mt-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              variants={staggerContainer}
+              className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-3"
+            >
               {projects.map((project, i) => (
-                <Reveal key={project.name} delay={i * 0.1}>
-                  <article className="group h-full overflow-hidden rounded-2xl border border-border bg-card shadow-[0_1px_2px_rgba(0,0,0,0.04),0_8px_24px_-8px_rgba(0,0,0,0.25)] transition hover:-translate-y-1 hover:shadow-glow motion-reduce:transition-none">
-                    <div className="aspect-[16/9] w-full overflow-hidden">
-                      <img
-                        src={project.image}
-                        alt={project.name}
-                        className="h-full w-full object-cover transition duration-500 group-hover:scale-105 motion-reduce:transition-none"
-                      />
-                    </div>
-                    <div className="p-6">
-                      <div className="flex items-center justify-between gap-3">
-                        <h3 className="text-xl font-bold text-foreground">{project.name}</h3>
-                        <span className="rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
-                          {project.role}
-                        </span>
-                      </div>
-                      <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{project.description}</p>
-                      <p className="mt-4 font-mono text-xs text-muted-foreground">{project.stack}</p>
-                    </div>
-                  </article>
-                </Reveal>
+                <motion.div
+                  key={i}
+                  variants={fadeInUp}
+                  className="group overflow-hidden rounded-2xl border border-border bg-card text-card-foreground shadow-sm transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
+                >
+                  <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={project.image}
+                      alt={project.name}
+                      className="h-full w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <p className="text-xs font-semibold uppercase tracking-wide text-primary">{project.role}</p>
+                    <h3 className="mt-1 font-display text-lg font-semibold text-foreground">{project.name}</h3>
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{project.description}</p>
+                    <p className="mt-4 text-xs font-medium text-muted-foreground">{project.stack}</p>
+                  </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </section>
       </Reveal>
 
-      {/* CORE EXPERTISE */}
+      {/* CREDENTIALS */}
       <Reveal>
-        <section id="expertise" className="relative bg-mesh py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-6">
+        <section id="credentials" className="relative overflow-hidden bg-mesh px-6 py-20 md:py-28">
+          <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
-              <span className="text-sm font-semibold uppercase tracking-wide text-primary">
-                {t("home.expertise.eyebrow")}
-              </span>
-              <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                {t("home.expertise.title")}
-              </h2>
-              <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{t("home.expertise.subtitle")}</p>
-            </div>
-
-            <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {expertiseItems.map((item, i) => {
-                const Icon = EXPERTISE_ICONS[i % EXPERTISE_ICONS.length] ?? Activity;
-                return (
-                  <Reveal key={item.title} delay={i * 0.07}>
-                    <div className="glass surface-elevated h-full rounded-2xl p-6">
-                      <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-                        <Icon className="h-5 w-5" aria-hidden="true" />
-                      </div>
-                      <h3 className="mt-4 text-lg font-semibold text-foreground">{item.title}</h3>
-                      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.description}</p>
-                    </div>
-                  </Reveal>
-                );
-              })}
-            </div>
-
-            <div className="mt-10 text-center">
-              <Link
-                href="/skills"
-                className="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow transition hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-              >
-                {t("home.expertise.cta")}
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            </div>
-          </div>
-        </section>
-      </Reveal>
-
-      {/* CREDENTIALS: EDUCATION, CERTIFICATIONS, AWARDS */}
-      <Reveal>
-        <section id="credentials" className="bg-background py-20 md:py-28">
-          <div className="mx-auto max-w-6xl px-6">
-            <div className="max-w-2xl">
-              <span className="text-sm font-semibold uppercase tracking-wide text-primary">
+              <span className="text-sm font-semibold uppercase tracking-widest text-primary">
                 {t("home.credentials.eyebrow")}
               </span>
-              <h2 className="mt-3 text-balance text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-                {t("home.credentials.title")}
+              <h2 className="mt-3 text-balance font-display text-3xl font-semibold tracking-tight md:text-4xl">
+                <span className="text-gradient">{t("home.credentials.title")}</span>
               </h2>
-              <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{t("home.credentials.subtitle")}</p>
             </div>
 
-            <div className="mt-12 grid grid-cols-1 gap-6 lg:grid-cols-3">
-              <Reveal>
-                <div className="h-full rounded-2xl border border-border bg-card p-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    {t("home.credentials.educationLabel")}
-                  </h3>
-                  <p className="mt-4 text-lg font-semibold text-foreground">{t("home.credentials.educationDegree")}</p>
-                  <p className="mt-1 text-sm text-muted-foreground">{t("home.credentials.educationInstitution")}</p>
-                  <p className="mt-1 text-xs text-muted-foreground">{t("home.credentials.educationPeriod")}</p>
+            <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-80px" }}
+                variants={staggerContainer}
+              >
+                <h3 className="flex items-center gap-2 font-display text-lg font-semibold text-foreground">
+                  <Award className="h-5 w-5 text-primary" aria-hidden="true" />
+                  {t("home.credentials.certificationsTitle")}
+                </h3>
+                <div className="mt-6 space-y-4">
+                  {certifications.map((cert, i) => (
+                    <motion.div
+                      key={i}
+                      variants={fadeInUp}
+                      className="flex items-start gap-3 rounded-2xl border border-border bg-card p-5 text-card-foreground shadow-sm transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
+                    >
+                      <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                      <span className="text-sm leading-relaxed text-muted-foreground">{cert}</span>
+                    </motion.div>
+                  ))}
                 </div>
-              </Reveal>
+              </motion.div>
 
-              <Reveal delay={0.08}>
-                <div className="h-full rounded-2xl border border-border bg-card p-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    {t("home.credentials.certificationsLabel")}
-                  </h3>
-                  <ul className="mt-4 space-y-3">
-                    {certifications.map((cert, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-foreground">
-                        <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                        <span>{cert}</span>
-                      </li>
-                    ))}
-                  </ul>
+              <motion.div
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true, margin: "-80px" }}
+                variants={staggerContainer}
+              >
+                <h3 className="flex items-center gap-2 font-display text-lg font-semibold text-foreground">
+                  <Star className="h-5 w-5 text-primary" aria-hidden="true" />
+                  {t("home.credentials.awardsTitle")}
+                </h3>
+                <div className="mt-6 space-y-4">
+                  {awards.map((award, i) => (
+                    <motion.div
+                      key={i}
+                      variants={fadeInUp}
+                      className="flex items-start gap-3 rounded-2xl border border-border bg-card p-5 text-card-foreground shadow-sm transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
+                    >
+                      <Star className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
+                      <span className="text-sm leading-relaxed text-muted-foreground">{award}</span>
+                    </motion.div>
+                  ))}
                 </div>
-              </Reveal>
-
-              <Reveal delay={0.16}>
-                <div className="h-full rounded-2xl border border-border bg-card p-6">
-                  <h3 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-                    {t("home.credentials.awardsLabel")}
-                  </h3>
-                  <ul className="mt-4 space-y-3">
-                    {awards.map((award, i) => (
-                      <li key={i} className="flex items-start gap-2 text-sm text-foreground">
-                        <Star className="mt-0.5 h-4 w-4 shrink-0 text-primary" aria-hidden="true" />
-                        <span>{award}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </Reveal>
+              </motion.div>
             </div>
           </div>
         </section>
       </Reveal>
 
-      {/* CONTACT */}
+      {/* CONTACT CTA */}
       <Reveal>
-        <section id="contact" className="relative bg-gradient-brand py-20 md:py-28">
-          <div className="mx-auto max-w-4xl px-6 text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/20 bg-primary-foreground/10 px-4 py-1.5 text-sm font-medium text-primary-foreground">
-              <Award className="h-4 w-4" aria-hidden="true" />
-              {t("home.contact.eyebrow")}
-            </span>
-            <h2 className="mt-6 text-balance text-3xl font-bold tracking-tight text-primary-foreground md:text-4xl">
+        <section id="contact" className="bg-background px-6 py-20 md:py-28">
+          <div className="mx-auto max-w-4xl overflow-hidden rounded-3xl bg-gradient-brand bg-primary px-6 py-16 text-center text-primary-foreground shadow-glow md:px-16 md:py-20">
+            <h2 className="text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
               {t("home.contact.title")}
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-primary-foreground/80">
+            <p className="mx-auto mt-4 max-w-xl text-pretty text-lg text-primary-foreground/80">
               {t("home.contact.subtitle")}
             </p>
-
-            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
+            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
               <a
                 href={`mailto:${EMAIL}`}
-                className="inline-flex items-center gap-2 rounded-lg bg-background px-6 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="inline-flex items-center gap-2 rounded-lg bg-secondary px-6 py-3 text-sm font-semibold text-secondary-foreground transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <Mail className="h-4 w-4" aria-hidden="true" />
                 {t("home.contact.emailLabel")}
@@ -403,15 +402,12 @@ export default function HomePage() {
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={cn(
-                  "inline-flex items-center gap-2 rounded-lg border border-primary-foreground/30 bg-primary-foreground/10 px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:-translate-y-0.5 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                )}
+                className="glass-strong inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold text-foreground transition hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
               >
                 <Linkedin className="h-4 w-4" aria-hidden="true" />
                 {t("home.contact.linkedinLabel")}
               </a>
             </div>
-            <p className="mt-6 text-sm text-primary-foreground/70">{t("home.contact.email")}</p>
           </div>
         </section>
       </Reveal>

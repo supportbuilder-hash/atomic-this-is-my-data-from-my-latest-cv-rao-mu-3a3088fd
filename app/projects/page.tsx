@@ -56,15 +56,17 @@ export default function ProjectsPage() {
     <main className="bg-background text-foreground">
       {/* Page header */}
       <Reveal>
-        <section className="relative overflow-hidden bg-mesh px-6 pb-16 pt-28 md:pt-36">
-          <div className="mx-auto max-w-5xl text-center">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-sm font-medium text-muted-foreground">
+        <section className="relative overflow-hidden bg-mesh px-6 py-24 md:py-32">
+          <div aria-hidden="true" className="pointer-events-none absolute -left-24 top-10 h-72 w-72 rounded-full bg-primary/25 blur-3xl" />
+          <div aria-hidden="true" className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-accent/25 blur-3xl" />
+          <div className="relative mx-auto max-w-5xl text-center">
+            <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-sm font-medium text-foreground/80">
               {t("projects.header.eyebrow")}
             </span>
             <h1 className="mt-6 text-balance font-display text-4xl font-semibold tracking-tight md:text-6xl">
               <span className="text-gradient">{t("projects.header.title")}</span>
             </h1>
-            <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-5 max-w-2xl text-pretty text-lg leading-relaxed text-foreground/70">
               {t("projects.header.subtitle")}
             </p>
           </div>
@@ -72,7 +74,7 @@ export default function ProjectsPage() {
       </Reveal>
 
       {/* Featured projects */}
-      <section id="featured-projects" className="px-6 py-20 md:py-28">
+      <section id="featured-projects" className="px-6 py-24 md:py-32">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <span className="text-sm font-semibold uppercase tracking-wider text-primary">
@@ -82,7 +84,7 @@ export default function ProjectsPage() {
 
           {/* VeridatAI - image left, text right */}
           <Reveal delay={0.05} className="mt-10">
-            <div className="grid grid-cols-1 items-center gap-10 rounded-2xl border border-border bg-card p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-glow md:grid-cols-2 md:p-10">
+            <div className="grid grid-cols-1 items-center gap-10 rounded-2xl border border-border bg-card p-6 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none md:grid-cols-2 md:p-10">
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.4, ease: "easeOut" }}
@@ -137,7 +139,7 @@ export default function ProjectsPage() {
 
           {/* Atomic Builder - text left, image right */}
           <Reveal delay={0.1} className="mt-8">
-            <div className="grid grid-cols-1 items-center gap-10 rounded-2xl border border-border bg-card p-6 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-glow md:grid-cols-2 md:p-10">
+            <div className="grid grid-cols-1 items-center gap-10 rounded-2xl border border-border bg-card p-6 transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none md:grid-cols-2 md:p-10">
               <div className="order-2 md:order-1">
                 <h2 className="font-display text-2xl font-semibold tracking-tight md:text-3xl">
                   {t("projects.featured.atomicBuilder.name")}
@@ -193,7 +195,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Additional project details - filterable grid */}
-      <section id="project-details" className="border-t border-border bg-card/30 px-6 py-20 md:py-28">
+      <section id="project-details" className="border-t border-border bg-card/30 px-6 py-24 md:py-32">
         <div className="mx-auto max-w-6xl">
           <Reveal>
             <div className="text-center">
@@ -217,10 +219,10 @@ export default function ProjectsPage() {
                   type="button"
                   onClick={() => setActiveCategory(cat)}
                   className={cn(
-                    "inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-all duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring",
+                    "inline-flex items-center gap-1.5 rounded-full border px-4 py-1.5 text-sm font-medium transition-colors duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring motion-reduce:transition-none",
                     activeCategory === cat
                       ? "border-primary bg-primary text-primary-foreground shadow-glow"
-                      : "border-border bg-card text-muted-foreground hover:text-foreground",
+                      : "border-border bg-muted text-muted-foreground hover:text-foreground",
                   )}
                 >
                   <Layout className="h-3.5 w-3.5" aria-hidden="true" />
@@ -237,11 +239,11 @@ export default function ProjectsPage() {
             viewport={{ once: true, margin: "-80px" }}
             className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {filtered.map((project, i) => (
+            {filtered.map((project) => (
               <motion.article
                 key={project.title}
                 variants={fadeInUp}
-                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-glow"
+                className="group flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none"
               >
                 <div className="relative aspect-[16/10] overflow-hidden">
                   <img
@@ -284,7 +286,7 @@ export default function ProjectsPage() {
 
       {/* Closing CTA */}
       <Reveal>
-        <section className="px-6 py-20 md:py-28">
+        <section className="px-6 py-24 md:py-32">
           <div className="mx-auto max-w-4xl rounded-2xl bg-gradient-brand p-10 text-center shadow-glow md:p-14">
             <Activity className="mx-auto h-8 w-8 text-primary-foreground" aria-hidden="true" />
             <h2 className="mt-4 text-balance font-display text-3xl font-semibold tracking-tight text-primary-foreground md:text-4xl">

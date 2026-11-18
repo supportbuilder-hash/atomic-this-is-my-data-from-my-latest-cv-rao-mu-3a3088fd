@@ -43,7 +43,7 @@ export default function AboutPage() {
   const spanPattern = ["md:col-span-3", "md:col-span-3", "md:col-span-2", "md:col-span-4", "md:col-span-3", "md:col-span-3"];
 
   return (
-    <main>
+    <main className="bg-background">
       {/* Hero */}
       <Reveal>
         <section className="relative overflow-hidden bg-mesh px-6 py-24 md:py-32">
@@ -64,7 +64,7 @@ export default function AboutPage() {
 
       {/* Professional Summary */}
       <Reveal>
-        <section id="summary" className="px-6 py-24 md:py-32">
+        <section id="summary" className="bg-background px-6 py-24 md:py-32">
           <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-5 lg:gap-16">
             <div className="lg:col-span-3">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
@@ -78,6 +78,9 @@ export default function AboutPage() {
             </div>
             <motion.div
               variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
               className="grid grid-cols-2 gap-4 lg:col-span-2"
             >
               {metrics.map((metric, i) => {
@@ -86,11 +89,11 @@ export default function AboutPage() {
                   <motion.div
                     key={i}
                     variants={fadeInUp}
-                    className="glass surface-elevated rounded-lg border border-border p-5 transition hover:-translate-y-1 hover:shadow-glow motion-reduce:transition-none"
+                    className="rounded-2xl border border-border bg-card p-5 text-card-foreground shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                   >
                     <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
                     <div className="mt-3 text-xl font-semibold tracking-tight font-display">{metric.value}</div>
-                    <div className="mt-1 text-sm text-foreground/60">{metric.label}</div>
+                    <div className="mt-1 text-sm text-muted-foreground">{metric.label}</div>
                   </motion.div>
                 );
               })}
@@ -101,7 +104,7 @@ export default function AboutPage() {
 
       {/* Education */}
       <Reveal>
-        <section id="education" className="bg-card/40 px-6 py-24 md:py-32">
+        <section id="education" className="bg-muted/40 px-6 py-24 md:py-32">
           <div className="mx-auto max-w-4xl">
             <div className="text-center">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
@@ -110,23 +113,29 @@ export default function AboutPage() {
               <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight font-display md:text-4xl">
                 {t("about.education.title")}
               </h2>
-              <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-foreground/70">
+              <p className="mx-auto mt-4 max-w-xl text-pretty leading-relaxed text-muted-foreground">
                 {t("about.education.subtitle")}
               </p>
             </div>
-            <motion.div variants={staggerContainer} className="relative mt-16 space-y-10 border-l border-border pl-8">
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="relative mt-16 space-y-10 border-l border-border pl-8"
+            >
               {educationItems.map((item, i) => (
                 <motion.div key={i} variants={fadeInUp} className="relative">
                   <span className="absolute -left-[2.35rem] top-1 flex h-6 w-6 items-center justify-center rounded-full bg-primary text-primary-foreground shadow-glow">
                     <Calendar className="h-3.5 w-3.5" aria-hidden="true" />
                   </span>
-                  <div className="glass surface-elevated rounded-lg border border-border p-6 transition hover:-translate-y-1 hover:shadow-glow motion-reduce:transition-none">
+                  <div className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0">
                     <div className="flex flex-wrap items-center justify-between gap-2">
                       <h3 className="text-lg font-semibold tracking-tight font-display">{item.degree}</h3>
                       <span className="text-sm font-medium text-primary">{item.period}</span>
                     </div>
                     <p className="mt-1 text-sm font-medium text-foreground/80">{item.institution}</p>
-                    <p className="mt-3 text-pretty leading-relaxed text-foreground/70">{item.description}</p>
+                    <p className="mt-3 text-pretty leading-relaxed text-muted-foreground">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -137,7 +146,7 @@ export default function AboutPage() {
 
       {/* Awards & Leadership */}
       <Reveal>
-        <section id="awards" className="px-6 py-24 md:py-32">
+        <section id="awards" className="relative overflow-hidden bg-mesh px-6 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
@@ -148,14 +157,20 @@ export default function AboutPage() {
               </h2>
               <p className="mt-4 text-pretty leading-relaxed text-foreground/70">{t("about.awards.subtitle")}</p>
             </div>
-            <motion.div variants={staggerContainer} className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-6">
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="mt-14 grid grid-cols-1 gap-5 md:grid-cols-6"
+            >
               {awardItems.map((award, i) => {
                 const Icon = AWARD_ICONS[award.type] ?? Star;
                 return (
                   <motion.div
                     key={i}
                     variants={fadeInUp}
-                    className={`${spanPattern[i % spanPattern.length]} glass surface-elevated rounded-lg border border-border p-6 transition hover:-translate-y-1 hover:shadow-glow motion-reduce:transition-none`}
+                    className={`${spanPattern[i % spanPattern.length]} glass rounded-2xl p-6 text-foreground transition duration-300 ease-out hover:-translate-y-1 hover:shadow-glow motion-reduce:transition-none motion-reduce:hover:translate-y-0`}
                   >
                     <div className="flex items-center justify-between">
                       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
@@ -175,7 +190,7 @@ export default function AboutPage() {
 
       {/* Certifications */}
       <Reveal>
-        <section id="certifications" className="bg-card/40 px-6 py-24 md:py-32">
+        <section id="certifications" className="bg-muted/40 px-6 py-24 md:py-32">
           <div className="mx-auto max-w-6xl">
             <div className="mx-auto max-w-2xl text-center">
               <span className="text-sm font-semibold uppercase tracking-widest text-primary">
@@ -184,23 +199,29 @@ export default function AboutPage() {
               <h2 className="mt-3 text-balance text-3xl font-semibold tracking-tight font-display md:text-4xl">
                 {t("about.certifications.title")}
               </h2>
-              <p className="mt-4 text-pretty leading-relaxed text-foreground/70">
+              <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
                 {t("about.certifications.subtitle")}
               </p>
             </div>
-            <motion.div variants={staggerContainer} className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+            >
               {certItems.map((cert, i) => (
                 <motion.div
                   key={i}
                   variants={fadeInUp}
-                  className="glass surface-elevated flex flex-col rounded-lg border border-border p-6 transition hover:-translate-y-1 hover:shadow-glow motion-reduce:transition-none"
+                  className="flex flex-col rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                 >
                   <span className="flex h-10 w-10 items-center justify-center rounded-full bg-primary/10 text-primary">
                     <FileCode className="h-5 w-5" aria-hidden="true" />
                   </span>
                   <h3 className="mt-4 text-lg font-semibold tracking-tight font-display">{cert.name}</h3>
                   <p className="mt-1 text-sm font-medium text-foreground/80">{cert.issuer}</p>
-                  <p className="mt-1 text-sm text-foreground/60">{cert.date}</p>
+                  <p className="mt-1 text-sm text-muted-foreground">{cert.date}</p>
                   <a
                     href={cert.credentialUrl}
                     className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-primary transition hover:gap-2.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring"
@@ -217,8 +238,8 @@ export default function AboutPage() {
 
       {/* Closing CTA */}
       <Reveal>
-        <section className="px-6 py-20 md:py-28">
-          <div className="bg-gradient-brand mx-auto flex max-w-5xl flex-col items-center gap-6 rounded-lg px-8 py-14 text-center shadow-glow md:flex-row md:justify-between md:text-left">
+        <section className="bg-background px-6 py-24 md:py-32">
+          <div className="bg-gradient-brand mx-auto flex max-w-5xl flex-col items-center gap-6 rounded-2xl px-8 py-14 text-center shadow-glow md:flex-row md:justify-between md:text-left">
             <div>
               <h2 className="text-balance text-2xl font-semibold tracking-tight font-display text-primary-foreground md:text-3xl">
                 {t("about.cta.title")}
@@ -229,7 +250,7 @@ export default function AboutPage() {
             </div>
             <a
               href="/#contact"
-              className="glass-strong inline-flex shrink-0 items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring motion-reduce:transition-none"
+              className="glass-strong inline-flex shrink-0 items-center gap-2 rounded-full px-6 py-3 text-sm font-semibold text-primary-foreground transition duration-300 ease-out hover:-translate-y-0.5 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring motion-reduce:transition-none"
             >
               {t("about.cta.button")}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />

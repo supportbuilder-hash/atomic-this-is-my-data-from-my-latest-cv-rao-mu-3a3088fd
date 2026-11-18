@@ -40,7 +40,7 @@ const barVariant: Variants = {
 
 function SkillTag({ label }: { label: string }) {
   return (
-    <span className="inline-flex items-center rounded-full border border-border bg-card px-3 py-1.5 text-sm text-card-foreground transition duration-300 ease-out hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary">
+    <span className="inline-flex items-center rounded-full border border-border bg-card px-3 py-1.5 text-sm text-card-foreground transition duration-300 ease-out hover:-translate-y-0.5 hover:border-primary/40 hover:text-primary motion-reduce:transition-none">
       {label}
     </span>
   );
@@ -85,7 +85,7 @@ export default function SkillsPage() {
       <Reveal>
         <section className="relative overflow-hidden bg-mesh">
           <div className="mx-auto max-w-5xl px-6 py-24 text-center md:py-32">
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-muted-foreground">
+            <span className="glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-medium uppercase tracking-wider text-foreground/80">
               <Sparkles className="h-3.5 w-3.5 text-primary" aria-hidden="true" />
               {t("skillsPage.hero.eyebrow")}
             </span>
@@ -93,7 +93,7 @@ export default function SkillsPage() {
               <span className="text-gradient">{t("skillsPage.hero.titleAccent")}</span>{" "}
               {t("skillsPage.hero.title")}
             </h1>
-            <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground">
+            <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-foreground/70">
               {t("skillsPage.hero.subtitle")}
             </p>
           </div>
@@ -102,56 +102,58 @@ export default function SkillsPage() {
 
       {/* Skills grid */}
       <Reveal>
-        <section id="skills-grid" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-primary">
-              {t("skillsPage.skillsGrid.eyebrow")}
-            </span>
-            <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
-              {t("skillsPage.skillsGrid.title")}
-            </h2>
-            <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              {t("skillsPage.skillsGrid.subtitle")}
-            </p>
-          </div>
+        <section id="skills-grid" className="bg-background">
+          <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+            <div className="mx-auto max-w-2xl text-center">
+              <span className="text-sm font-semibold uppercase tracking-wider text-primary">
+                {t("skillsPage.skillsGrid.eyebrow")}
+              </span>
+              <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
+                {t("skillsPage.skillsGrid.title")}
+              </h2>
+              <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+                {t("skillsPage.skillsGrid.subtitle")}
+              </p>
+            </div>
 
-          <motion.div
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-80px" }}
-            className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
-          >
-            {skillCategories.map((cat) => {
-              const Icon = CATEGORY_ICONS[cat.category] ?? Circle;
-              return (
-                <motion.div
-                  key={cat.category}
-                  variants={fadeInUp}
-                  className="surface-elevated rounded-2xl border border-border bg-card p-6 transition duration-300 ease-out hover:-translate-y-1"
-                >
-                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10">
-                    <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
-                  </div>
-                  <h3 className="mt-4 font-display text-lg font-semibold tracking-tight">
-                    {cat.category}
-                  </h3>
-                  <div className="mt-4 flex flex-wrap gap-2">
-                    {(cat.skills ?? []).map((skill) => (
-                      <SkillTag key={skill} label={skill} />
-                    ))}
-                  </div>
-                </motion.div>
-              );
-            })}
-          </motion.div>
+            <motion.div
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, margin: "-80px" }}
+              className="mt-14 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3"
+            >
+              {skillCategories.map((cat) => {
+                const Icon = CATEGORY_ICONS[cat.category] ?? Circle;
+                return (
+                  <motion.div
+                    key={cat.category}
+                    variants={fadeInUp}
+                    className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0"
+                  >
+                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-primary/10">
+                      <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
+                    </div>
+                    <h3 className="mt-4 font-display text-lg font-semibold tracking-tight">
+                      {cat.category}
+                    </h3>
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      {(cat.skills ?? []).map((skill) => (
+                        <SkillTag key={skill} label={skill} />
+                      ))}
+                    </div>
+                  </motion.div>
+                );
+              })}
+            </motion.div>
+          </div>
         </section>
       </Reveal>
 
       {/* Tools */}
       <Reveal>
-        <section id="tools" className="bg-card/40">
-          <div className="mx-auto max-w-7xl px-6 py-20 md:py-28">
+        <section id="tools" className="bg-muted/40">
+          <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
             <div className="mx-auto max-w-2xl text-center">
               <span className="text-sm font-semibold uppercase tracking-wider text-primary">
                 {t("skillsPage.tools.eyebrow")}
@@ -177,8 +179,7 @@ export default function SkillsPage() {
                   <motion.div
                     key={tool.name}
                     variants={fadeInUp}
-                    whileHover={{ y: -4 }}
-                    className="glass flex flex-col items-start gap-3 rounded-2xl border border-border p-5 shadow-glow transition duration-300 ease-out"
+                    className="glass flex flex-col items-start gap-3 rounded-2xl border border-border p-5 text-card-foreground shadow-glow transition duration-300 ease-out hover:-translate-y-1 hover:shadow-lg motion-reduce:transition-none motion-reduce:hover:translate-y-0"
                   >
                     <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
                       <Icon className="h-5 w-5 text-primary" aria-hidden="true" />
@@ -199,90 +200,96 @@ export default function SkillsPage() {
 
       {/* Proficiencies */}
       <Reveal>
-        <section id="proficiencies" className="mx-auto max-w-7xl px-6 py-20 md:py-28">
-          <div className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-wider text-primary">
-              {t("skillsPage.proficiencies.eyebrow")}
-            </span>
-            <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
-              {t("skillsPage.proficiencies.title")}
-            </h2>
-            <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
-              {t("skillsPage.proficiencies.subtitle")}
-            </p>
-          </div>
-
-          <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
-            <div className="space-y-6">
-              {proficiencies.map((item) => (
-                <div key={item.label}>
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="font-medium text-foreground">{item.label}</span>
-                    <span className="text-muted-foreground">{item.value}%</span>
-                  </div>
-                  <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-muted">
-                    <motion.div
-                      custom={item.value}
-                      initial="hidden"
-                      whileInView="visible"
-                      viewport={{ once: true, margin: "-60px" }}
-                      variants={barVariant}
-                      className="h-full rounded-full bg-gradient-brand"
-                    />
-                  </div>
-                </div>
-              ))}
+        <section id="proficiencies" className="bg-background">
+          <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+            <div className="mx-auto max-w-2xl text-center">
+              <span className="text-sm font-semibold uppercase tracking-wider text-primary">
+                {t("skillsPage.proficiencies.eyebrow")}
+              </span>
+              <h2 className="mt-3 text-balance font-display text-3xl font-bold tracking-tight md:text-4xl">
+                {t("skillsPage.proficiencies.title")}
+              </h2>
+              <p className="mt-4 text-pretty leading-relaxed text-muted-foreground">
+                {t("skillsPage.proficiencies.subtitle")}
+              </p>
             </div>
 
-            <div className="glass rounded-2xl border border-border p-6 shadow-glow">
-              <svg viewBox="0 0 100 100" className="mx-auto h-auto w-full max-w-md" role="img" aria-label={t("skillsPage.proficiencies.title")}>
-                {radarRings.map((r) => (
-                  <circle
-                    key={r}
-                    cx="50"
-                    cy="50"
-                    r={42 * r}
-                    fill="none"
-                    stroke="hsl(var(--border))"
-                    strokeWidth="0.4"
-                  />
-                ))}
-                {radarPoints.map((p) => (
-                  <line
-                    key={p.label}
-                    x1="50"
-                    y1="50"
-                    x2={50 + 42 * (p.x - 50) / (p.x - 50 || 1) * 0 + (p.x - 50) * (42 / 42)}
-                    y2={50 + (p.y - 50)}
-                    stroke="hsl(var(--border))"
-                    strokeWidth="0.4"
-                  />
-                ))}
-                {radarPoints.length > 2 && (
-                  <polygon
-                    points={radarPolygon}
-                    fill="hsl(var(--primary))"
-                    fillOpacity="0.32"
-                    stroke="hsl(var(--primary))"
-                    strokeWidth="0.8"
-                  />
-                )}
-                {radarPoints.map((p) => (
-                  <circle key={`${p.label}-dot`} cx={p.x} cy={p.y} r="1.3" fill="hsl(var(--primary))" />
-                ))}
-                {radarPoints.map((p) => (
-                  <text
-                    key={`${p.label}-label`}
-                    x={p.labelX}
-                    y={p.labelY}
-                    fontSize="3.2"
-                    textAnchor="middle"
-                    fill="hsl(var(--muted-foreground))"
-                  >
-                    {p.label.length > 14 ? `${p.label.slice(0, 12)}…` : p.label}
-                  </text>
-                ))}
-              </svg>
+            <div className="mt-14 grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
+              <div className="rounded-2xl border border-border bg-card p-6 text-card-foreground shadow-sm">
+                <div className="space-y-6">
+                  {proficiencies.map((item) => (
+                    <div key={item.label}>
+                      <div className="flex items-center justify-between text-sm">
+                        <span className="font-medium text-foreground">{item.label}</span>
+                        <span className="text-muted-foreground">{item.value}%</span>
+                      </div>
+                      <div className="mt-2 h-2.5 w-full overflow-hidden rounded-full bg-muted">
+                        <motion.div
+                          custom={item.value}
+                          initial="hidden"
+                          whileInView="visible"
+                          viewport={{ once: true, margin: "-60px" }}
+                          variants={barVariant}
+                          className="h-full rounded-full bg-gradient-brand"
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              <div className="relative overflow-hidden rounded-2xl bg-mesh p-8">
+                <div className="glass-strong rounded-2xl p-6 shadow-glow">
+                  <svg viewBox="0 0 100 100" className="mx-auto h-auto w-full max-w-md" role="img" aria-label={t("skillsPage.proficiencies.title")}>
+                    {radarRings.map((r) => (
+                      <circle
+                        key={r}
+                        cx="50"
+                        cy="50"
+                        r={42 * r}
+                        fill="none"
+                        stroke="hsl(var(--border))"
+                        strokeWidth="0.4"
+                      />
+                    ))}
+                    {radarPoints.map((p) => (
+                      <line
+                        key={p.label}
+                        x1="50"
+                        y1="50"
+                        x2={50 + 42 * (p.x - 50) / (p.x - 50 || 1) * 0 + (p.x - 50) * (42 / 42)}
+                        y2={50 + (p.y - 50)}
+                        stroke="hsl(var(--border))"
+                        strokeWidth="0.4"
+                      />
+                    ))}
+                    {radarPoints.length > 2 && (
+                      <polygon
+                        points={radarPolygon}
+                        fill="hsl(var(--primary))"
+                        fillOpacity="0.32"
+                        stroke="hsl(var(--primary))"
+                        strokeWidth="0.8"
+                      />
+                    )}
+                    {radarPoints.map((p) => (
+                      <circle key={`${p.label}-dot`} cx={p.x} cy={p.y} r="1.3" fill="hsl(var(--primary))" />
+                    ))}
+                    {radarPoints.map((p) => (
+                      <text
+                        key={`${p.label}-label`}
+                        x={p.labelX}
+                        y={p.labelY}
+                        fontSize="3.2"
+                        textAnchor="middle"
+                        fill="hsl(var(--muted-foreground))"
+                      >
+                        {p.label.length > 14 ? `${p.label.slice(0, 12)}…` : p.label}
+                      </text>
+                    ))}
+                  </svg>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -304,7 +311,7 @@ export default function SkillsPage() {
               href="/projects"
               className={cn(
                 "inline-flex shrink-0 items-center gap-2 rounded-full bg-card px-6 py-3 text-sm font-semibold text-card-foreground",
-                "transition duration-300 ease-out hover:-translate-y-0.5 hover:shadow-glow",
+                "transition duration-300 ease-out hover:-translate-y-0.5 hover:shadow-glow motion-reduce:transition-none",
               )}
             >
               {t("skillsPage.closing.cta")}
