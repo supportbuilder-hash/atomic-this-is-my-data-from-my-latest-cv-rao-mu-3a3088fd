@@ -32,7 +32,7 @@
       "eyebrow": "Selected Work",
       "title": "Projects built to catch bugs before users do",
       "subtitle": "A collection of automation frameworks, AI-assisted testing platforms, and internal tools built to make software quality measurable and repeatable.",
-      "imageQuery": "software development workspace screens"
+      "imageQuery": "developer multiple monitors workspace"
     },
     "featured": {
       "eyebrow": "Featured Projects",
@@ -50,7 +50,7 @@
           "CI/CD",
           "OpenAI API"
         ],
-        "imageQuery": "ai data validation dashboard"
+        "imageQuery": "data validation charts screen"
       },
       "atomicBuilder": {
         "badge": "Internal Tool",
@@ -65,7 +65,7 @@
           "Jest",
           "REST APIs"
         ],
-        "imageQuery": "visual automation builder interface"
+        "imageQuery": "drag drop component builder screen"
       }
     },
     "details": {
@@ -79,7 +79,7 @@
           "title": "E-commerce Regression Suite",
           "category": "Automation",
           "description": "An end-to-end Selenium and Playwright suite covering checkout, cart, and payment flows across three storefront brands, cutting release-day regression time from days to hours.",
-          "imageQuery": "ecommerce checkout testing automation",
+          "imageQuery": "online shopping cart checkout screen",
           "tags": [
             "Playwright",
             "TypeScript",
@@ -90,7 +90,7 @@
           "title": "API Contract Testing Framework",
           "category": "API Testing",
           "description": "A contract-testing framework validating request and response schemas across microservices, catching breaking changes before they reach staging.",
-          "imageQuery": "api schema validation code",
+          "imageQuery": "json code schema editor",
           "tags": [
             "Postman",
             "Newman",
@@ -101,7 +101,7 @@
           "title": "Mobile QA Automation Pipeline",
           "category": "Mobile",
           "description": "An Appium-driven automation pipeline running cross-device smoke and regression suites on every pull request for a consumer mobile app.",
-          "imageQuery": "mobile app automated testing devices",
+          "imageQuery": "smartphones lined up testing lab",
           "tags": [
             "Appium",
             "Java",
@@ -112,7 +112,7 @@
           "title": "Performance Load Testing Dashboard",
           "category": "Performance",
           "description": "A JMeter-based load testing setup with a live Grafana dashboard tracking response time, throughput, and error rate under simulated peak traffic.",
-          "imageQuery": "performance load testing dashboard",
+          "imageQuery": "grafana metrics graph screen",
           "tags": [
             "JMeter",
             "Grafana",
@@ -123,7 +123,7 @@
           "title": "Defect Analytics Dashboard",
           "category": "Analytics",
           "description": "An internal dashboard aggregating defect trends from Jira, surfacing flaky-test hotspots and recurring root causes for sprint retrospectives.",
-          "imageQuery": "defect analytics dashboard charts",
+          "imageQuery": "bug tracking chart dashboard",
           "tags": [
             "Jira API",
             "Python",
@@ -144,7 +144,7 @@
       "titleAccent": "Quality engineering,",
       "title": "built on a deep automation stack",
       "subtitle": "A breakdown of the frameworks, tools, and core competencies I rely on to design resilient test strategies and ship automation that scales with the product.",
-      "imageQuery": "code editor automation scripts"
+      "imageQuery": "programmer writing test scripts"
     },
     "skillsGrid": {
       "eyebrow": "Core Expertise",
@@ -222,62 +222,62 @@
         {
           "name": "Selenium WebDriver",
           "category": "Automation",
-          "imageQuery": "selenium webdriver logo automation"
+          "imageQuery": "selenium browser automation icon"
         },
         {
           "name": "Playwright",
           "category": "Automation",
-          "imageQuery": "playwright testing tool"
+          "imageQuery": "playwright test runner screen"
         },
         {
           "name": "Cypress",
           "category": "Automation",
-          "imageQuery": "cypress testing framework"
+          "imageQuery": "cypress test dashboard interface"
         },
         {
           "name": "Postman",
           "category": "API Testing",
-          "imageQuery": "postman api testing tool"
+          "imageQuery": "postman collection request panel"
         },
         {
           "name": "REST Assured",
           "category": "API Testing",
-          "imageQuery": "rest api testing code"
+          "imageQuery": "java api testing console"
         },
         {
           "name": "Jenkins",
           "category": "CI/CD",
-          "imageQuery": "jenkins ci cd pipeline"
+          "imageQuery": "jenkins build dashboard screen"
         },
         {
           "name": "GitHub Actions",
           "category": "CI/CD",
-          "imageQuery": "github actions workflow"
+          "imageQuery": "github actions workflow yaml"
         },
         {
           "name": "Docker",
           "category": "Cloud & Containers",
-          "imageQuery": "docker containers cloud"
+          "imageQuery": "shipping containers stacked blue"
         },
         {
           "name": "Kubernetes",
           "category": "Cloud & Containers",
-          "imageQuery": "kubernetes cluster cloud"
+          "imageQuery": "cluster nodes network diagram"
         },
         {
           "name": "Git",
           "category": "Version Control",
-          "imageQuery": "git version control branches"
+          "imageQuery": "branching commit tree graphic"
         },
         {
           "name": "JIRA",
           "category": "Test Management",
-          "imageQuery": "jira project management board"
+          "imageQuery": "kanban board sticky notes"
         },
         {
           "name": "TestRail",
           "category": "Test Management",
-          "imageQuery": "test case management software"
+          "imageQuery": "test case list spreadsheet"
         }
       ]
     },
@@ -323,7 +323,7 @@
       "eyebrow": "Career Journey",
       "title": "Work Experience",
       "subtitle": "A track record of building automation-first quality engineering practices across fintech, SaaS and platform teams.",
-      "imageQuery": "team meeting office collaboration"
+      "imageQuery": "colleagues discussing whiteboard meeting"
     },
     "timeline": {
       "eyebrow": "Where I've Worked",
@@ -342,7 +342,7 @@
             "Mentored two junior QA engineers on automation patterns and debugging strategy",
             "Introduced contract testing to keep microservices in sync across releases"
           ],
-          "imageQuery": "ai data platform engineering"
+          "imageQuery": "data engineer analyzing dashboard"
         },
         {
           "company": "Atomic Builder",
@@ -356,7 +356,7 @@
             "Collaborated directly with designers to validate generated layouts against design specs",
             "Documented test strategy and onboarding guides for new engineers"
           ],
-          "imageQuery": "low code platform development"
+          "imageQuery": "team building app interface"
         },
         {
           "company": "NetSol Technologies",
@@ -370,7 +370,7 @@
             "Performed cross-browser and localization testing for international client rollouts",
             "Contributed to the shift from manual-only to hybrid automated regression cycles"
           ],
-          "imageQuery": "enterprise finance software office"
+          "imageQuery": "corporate office financial software"
         },
         {
           "company": "TechVantage Solutions",
@@ -384,7 +384,7 @@
             "Supported sprint-level regression testing under tight release timelines",
             "Learned foundational API testing using Postman and REST Assured"
           ],
-          "imageQuery": "mobile app testing team"
+          "imageQuery": "young professional testing smartphone"
         }
       ]
     },
@@ -396,27 +396,27 @@
         {
           "title": "Framework Architect",
           "description": "Designed and shipped a reusable, cross-team automation framework now adopted as the default testing standard at VeridatAI.",
-          "imageQuery": "software architecture blueprint diagram"
+          "imageQuery": "system architecture diagram whiteboard"
         },
         {
           "title": "CI/CD Quality Gates",
           "description": "Embedded automated regression and smoke suites directly into deployment pipelines, catching defects before release instead of after.",
-          "imageQuery": "ci cd deployment pipeline screen"
+          "imageQuery": "deployment pipeline terminal screen"
         },
         {
           "title": "Cross-Team Mentorship",
           "description": "Coached junior QA engineers on automation design patterns, debugging discipline and sustainable test maintenance.",
-          "imageQuery": "mentor teaching colleague computer"
+          "imageQuery": "mentor guiding junior developer"
         },
         {
           "title": "Visual Regression Pipeline",
           "description": "Built a dedicated visual testing pipeline at Atomic Builder to protect generated UI output from unintended layout drift.",
-          "imageQuery": "visual regression testing screenshots"
+          "imageQuery": "ui screenshot comparison tool"
         },
         {
           "title": "Process Transformation",
           "description": "Led the transition from manual-heavy regression cycles to a hybrid automation strategy at NetSol Technologies.",
-          "imageQuery": "process transformation workflow diagram"
+          "imageQuery": "workflow transformation chart office"
         }
       ]
     },
@@ -432,7 +432,7 @@
       "titlePrefix": "Building quality into every",
       "titleHighlight": "release pipeline",
       "subtitle": "An SDET and QA Engineer who treats testing as an engineering discipline, not an afterthought, designing automation frameworks that catch regressions before they ever reach production.",
-      "imageQuery": "professional software engineer portrait"
+      "imageQuery": "confident engineer headshot office"
     },
     "summary": {
       "eyebrow": "Professional Summary",
@@ -472,21 +472,21 @@
           "institution": "National University of Computer & Emerging Sciences",
           "period": "2017 — 2021",
           "description": "Focused coursework in software engineering, databases, and distributed systems, with a final-year project centered on automated test tooling for web applications.",
-          "imageQuery": "university computer science campus"
+          "imageQuery": "university lecture hall students"
         },
         {
           "degree": "Intermediate in Pre-Engineering",
           "institution": "Punjab College of Science",
           "period": "2015 — 2017",
           "description": "Built the mathematics and analytical problem-solving foundation that later shaped a methodical, metrics-driven approach to quality engineering.",
-          "imageQuery": "college science classroom students"
+          "imageQuery": "students studying science textbooks"
         },
         {
           "degree": "Continuous Specialization in Test Automation",
           "institution": "Self-directed & industry training",
           "period": "2021 — Present",
           "description": "Ongoing deep-dives into automation frameworks, API testing, performance engineering, and CI/CD integration, kept current through hands-on project work.",
-          "imageQuery": "online learning coding course"
+          "imageQuery": "laptop online course video"
         }
       ]
     },
@@ -599,7 +599,7 @@
           "Pipeline gate: build approved for release"
         ]
       },
-      "imageQuery": "software engineer coding desk"
+      "imageQuery": "developer typing laptop code"
     },
     "summary": {
       "eyebrow": "Professional Summary",
@@ -632,14 +632,14 @@
           "role": "QA Lead",
           "description": "An AI-assisted data validation platform. I architected the end-to-end test strategy covering data pipeline accuracy, API contracts, and model output verification.",
           "stack": "Python · Pytest · Postman · GitHub Actions",
-          "imageQuery": "artificial intelligence data dashboard"
+          "imageQuery": "artificial intelligence analytics interface"
         },
         {
           "name": "Atomic Builder",
           "role": "SDET",
           "description": "A no-code website builder platform. I built a Playwright-driven UI automation suite alongside API test coverage to keep rapid feature releases safe and stable.",
           "stack": "TypeScript · Playwright · Docker · CI/CD",
-          "imageQuery": "no code website builder interface"
+          "imageQuery": "website builder drag drop editor"
         }
       ]
     },
@@ -652,32 +652,32 @@
         {
           "title": "Automation Frameworks",
           "description": "Designing modular, reusable Selenium and Playwright suites built to scale with the product.",
-          "imageQuery": "automated testing framework code"
+          "imageQuery": "automation test code screen"
         },
         {
           "title": "Version Control Workflows",
           "description": "Clean branching strategies and PR review practices that keep test suites reliable.",
-          "imageQuery": "git version control branching"
+          "imageQuery": "developer git branch diagram"
         },
         {
           "title": "API & Contract Testing",
           "description": "Postman and Pytest-based coverage that catches backend regressions before release.",
-          "imageQuery": "api testing postman screen"
+          "imageQuery": "rest api request response"
         },
         {
           "title": "CI/CD Pipelines",
           "description": "Wiring automated test gates into GitHub Actions and Jenkins pipelines.",
-          "imageQuery": "ci cd pipeline automation"
+          "imageQuery": "continuous integration pipeline graphic"
         },
         {
           "title": "Test Management",
           "description": "Structuring test plans, traceability, and reporting that stakeholders can trust.",
-          "imageQuery": "test management dashboard reports"
+          "imageQuery": "test plan spreadsheet report"
         },
         {
           "title": "Exploratory & Manual QA",
           "description": "Deep, scenario-driven testing for the edge cases automation alone won't catch.",
-          "imageQuery": "manual software testing laptop"
+          "imageQuery": "tester reviewing application screen"
         }
       ]
     },
