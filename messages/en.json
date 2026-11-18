@@ -79,7 +79,7 @@
           "title": "E-commerce Regression Suite",
           "category": "Automation",
           "description": "An end-to-end Selenium and Playwright suite covering checkout, cart, and payment flows across three storefront brands, cutting release-day regression time from days to hours.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/9eed3146eaee4c1c87e446a617633eca.jpg",
+          "imageQuery": "ecommerce checkout testing automation",
           "tags": [
             "Playwright",
             "TypeScript",
@@ -90,7 +90,7 @@
           "title": "API Contract Testing Framework",
           "category": "API Testing",
           "description": "A contract-testing framework validating request and response schemas across microservices, catching breaking changes before they reach staging.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/43d9d75fc64547ee98b1449ffd61d05c.jpg",
+          "imageQuery": "api schema validation code",
           "tags": [
             "Postman",
             "Newman",
@@ -101,7 +101,7 @@
           "title": "Mobile QA Automation Pipeline",
           "category": "Mobile",
           "description": "An Appium-driven automation pipeline running cross-device smoke and regression suites on every pull request for a consumer mobile app.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/6a92eb028a334f7db8711bc931340394.jpg",
+          "imageQuery": "mobile app automated testing devices",
           "tags": [
             "Appium",
             "Java",
@@ -112,7 +112,7 @@
           "title": "Performance Load Testing Dashboard",
           "category": "Performance",
           "description": "A JMeter-based load testing setup with a live Grafana dashboard tracking response time, throughput, and error rate under simulated peak traffic.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/df4b8282c11e4537bc78776b2da504ab.jpg",
+          "imageQuery": "performance load testing dashboard",
           "tags": [
             "JMeter",
             "Grafana",
@@ -123,7 +123,7 @@
           "title": "Defect Analytics Dashboard",
           "category": "Analytics",
           "description": "An internal dashboard aggregating defect trends from Jira, surfacing flaky-test hotspots and recurring root causes for sprint retrospectives.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/c7c0422183df463c8084c424f67807ae.jpg",
+          "imageQuery": "defect analytics dashboard charts",
           "tags": [
             "Jira API",
             "Python",
@@ -395,23 +395,28 @@
       "items": [
         {
           "title": "Framework Architect",
-          "description": "Designed and shipped a reusable, cross-team automation framework now adopted as the default testing standard at VeridatAI."
+          "description": "Designed and shipped a reusable, cross-team automation framework now adopted as the default testing standard at VeridatAI.",
+          "imageQuery": "software architecture blueprint diagram"
         },
         {
           "title": "CI/CD Quality Gates",
-          "description": "Embedded automated regression and smoke suites directly into deployment pipelines, catching defects before release instead of after."
+          "description": "Embedded automated regression and smoke suites directly into deployment pipelines, catching defects before release instead of after.",
+          "imageQuery": "ci cd deployment pipeline screen"
         },
         {
           "title": "Cross-Team Mentorship",
-          "description": "Coached junior QA engineers on automation design patterns, debugging discipline and sustainable test maintenance."
+          "description": "Coached junior QA engineers on automation design patterns, debugging discipline and sustainable test maintenance.",
+          "imageQuery": "mentor teaching colleague computer"
         },
         {
           "title": "Visual Regression Pipeline",
-          "description": "Built a dedicated visual testing pipeline at Atomic Builder to protect generated UI output from unintended layout drift."
+          "description": "Built a dedicated visual testing pipeline at Atomic Builder to protect generated UI output from unintended layout drift.",
+          "imageQuery": "visual regression testing screenshots"
         },
         {
           "title": "Process Transformation",
-          "description": "Led the transition from manual-heavy regression cycles to a hybrid automation strategy at NetSol Technologies."
+          "description": "Led the transition from manual-heavy regression cycles to a hybrid automation strategy at NetSol Technologies.",
+          "imageQuery": "process transformation workflow diagram"
         }
       ]
     },
@@ -466,19 +471,22 @@
           "degree": "BS in Computer Science",
           "institution": "National University of Computer & Emerging Sciences",
           "period": "2017 — 2021",
-          "description": "Focused coursework in software engineering, databases, and distributed systems, with a final-year project centered on automated test tooling for web applications."
+          "description": "Focused coursework in software engineering, databases, and distributed systems, with a final-year project centered on automated test tooling for web applications.",
+          "imageQuery": "university computer science campus"
         },
         {
           "degree": "Intermediate in Pre-Engineering",
           "institution": "Punjab College of Science",
           "period": "2015 — 2017",
-          "description": "Built the mathematics and analytical problem-solving foundation that later shaped a methodical, metrics-driven approach to quality engineering."
+          "description": "Built the mathematics and analytical problem-solving foundation that later shaped a methodical, metrics-driven approach to quality engineering.",
+          "imageQuery": "college science classroom students"
         },
         {
           "degree": "Continuous Specialization in Test Automation",
           "institution": "Self-directed & industry training",
           "period": "2021 — Present",
-          "description": "Ongoing deep-dives into automation frameworks, API testing, performance engineering, and CI/CD integration, kept current through hands-on project work."
+          "description": "Ongoing deep-dives into automation frameworks, API testing, performance engineering, and CI/CD integration, kept current through hands-on project work.",
+          "imageQuery": "online learning coding course"
         }
       ]
     },
@@ -631,7 +639,7 @@
           "role": "SDET",
           "description": "A no-code website builder platform. I built a Playwright-driven UI automation suite alongside API test coverage to keep rapid feature releases safe and stable.",
           "stack": "TypeScript · Playwright · Docker · CI/CD",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/bb4e8ff7e2be458984bbcce6b5661a07.jpg"
+          "imageQuery": "no code website builder interface"
         }
       ]
     },

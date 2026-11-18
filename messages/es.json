@@ -30,18 +30,18 @@
   "projects": {
     "header": {
       "eyebrow": "Trabajo Seleccionado",
-      "title": "Proyectos diseñados para detectar errores antes que los usuarios",
-      "subtitle": "Una colección de frameworks de automatización, plataformas de testing asistidas por IA y herramientas internas construidas para hacer la calidad del software medible y repetible.",
-      "imageQuery": "pantallas de espacio de trabajo de desarrollo de software"
+      "title": "Proyectos construidos para detectar errores antes que los usuarios",
+      "subtitle": "Una colección de marcos de automatización, plataformas de pruebas asistidas por IA y herramientas internas construidas para hacer que la calidad del software sea medible y repetible.",
+      "imageQuery": "espacio de desarrollo de software pantallas"
     },
     "featured": {
       "eyebrow": "Proyectos Destacados",
       "veridatai": {
         "badge": "Principal",
         "name": "VeridatAI",
-        "description": "Una plataforma de validación de datos asistida por IA y automatización de testing que verifica cruzadamente los resultados de la aplicación contra conjuntos de datos esperados, detecta anomalías automáticamente y reduce significativamente el tiempo de revisión manual de regresión en ciclos de lanzamiento.",
-        "liveLabel": "Ver en vivo",
-        "codeLabel": "Ver código",
+        "description": "Una plataforma de validación de datos y automatización de pruebas asistida por IA que verifica cruzadamente los resultados de la aplicación contra conjuntos de datos esperados, marca anomalías automáticamente y reduce significativamente el tiempo de revisión manual de regresión en ciclos de lanzamiento.",
+        "liveLabel": "Ver en Vivo",
+        "codeLabel": "Ver Código",
         "imageQuery": "panel de validación de datos con IA",
         "techStack": [
           "Python",
@@ -55,9 +55,9 @@
       "atomicBuilder": {
         "badge": "Herramienta Interna",
         "name": "Atomic Builder",
-        "description": "Un constructor de frameworks de automatización basado en componentes que permite a los equipos de QA ensamblar módulos de testing reutilizables a través de una interfaz visual, generando código mantenible del Page Object Model y reduciendo significativamente el tiempo de configuración de nuevas suites.",
-        "liveLabel": "Ver en vivo",
-        "codeLabel": "Ver código",
+        "description": "Un constructor de marcos de automatización basado en componentes que permite a los equipos de QA ensamblar módulos de prueba reutilizables a través de una interfaz visual, generando código mantenible del Modelo de Objeto de Página y reduciendo significativamente el tiempo de configuración de nuevas suites.",
+        "liveLabel": "Ver en Vivo",
+        "codeLabel": "Ver Código",
         "imageQuery": "interfaz visual del constructor de automatización",
         "techStack": [
           "TypeScript",
@@ -69,9 +69,9 @@
       }
     },
     "details": {
-      "eyebrow": "Más Proyectos",
+      "eyebrow": "Más Construcciones",
       "title": "Proyectos adicionales y herramientas internas",
-      "subtitle": "Suites de automatización, frameworks de API y dashboards de análisis construidos junto al trabajo principal para fortalecer la cobertura de testing y la confianza en los lanzamientos.",
+      "subtitle": "Suites de automatización, marcos de API y paneles de análisis construidos junto con el trabajo principal para fortalecer la cobertura de pruebas y la confianza en los lanzamientos.",
       "allLabel": "Todos",
       "viewLabel": "Ver proyecto",
       "items": [
@@ -79,7 +79,7 @@
           "title": "E-commerce Regression Suite",
           "category": "Automation",
           "description": "An end-to-end Selenium and Playwright suite covering checkout, cart, and payment flows across three storefront brands, cutting release-day regression time from days to hours.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/9eed3146eaee4c1c87e446a617633eca.jpg",
+          "imageQuery": "ecommerce checkout testing automation",
           "tags": [
             "Playwright",
             "TypeScript",
@@ -90,7 +90,7 @@
           "title": "API Contract Testing Framework",
           "category": "API Testing",
           "description": "A contract-testing framework validating request and response schemas across microservices, catching breaking changes before they reach staging.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/43d9d75fc64547ee98b1449ffd61d05c.jpg",
+          "imageQuery": "api schema validation code",
           "tags": [
             "Postman",
             "Newman",
@@ -101,7 +101,7 @@
           "title": "Mobile QA Automation Pipeline",
           "category": "Mobile",
           "description": "An Appium-driven automation pipeline running cross-device smoke and regression suites on every pull request for a consumer mobile app.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/6a92eb028a334f7db8711bc931340394.jpg",
+          "imageQuery": "mobile app automated testing devices",
           "tags": [
             "Appium",
             "Java",
@@ -112,7 +112,7 @@
           "title": "Performance Load Testing Dashboard",
           "category": "Performance",
           "description": "A JMeter-based load testing setup with a live Grafana dashboard tracking response time, throughput, and error rate under simulated peak traffic.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/df4b8282c11e4537bc78776b2da504ab.jpg",
+          "imageQuery": "performance load testing dashboard",
           "tags": [
             "JMeter",
             "Grafana",
@@ -123,7 +123,7 @@
           "title": "Defect Analytics Dashboard",
           "category": "Analytics",
           "description": "An internal dashboard aggregating defect trends from Jira, surfacing flaky-test hotspots and recurring root causes for sprint retrospectives.",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/c7c0422183df463c8084c424f67807ae.jpg",
+          "imageQuery": "defect analytics dashboard charts",
           "tags": [
             "Jira API",
             "Python",
@@ -133,7 +133,7 @@
       ]
     },
     "cta": {
-      "title": "¿Tienes un producto que necesita testing impecable?",
+      "title": "¿Tienes un producto que necesita pruebas impecables?",
       "subtitle": "Hablemos sobre cómo un SDET dedicado puede optimizar tu ciclo de lanzamiento y aumentar la confianza en cada despliegue.",
       "button": "Ponte en contacto"
     }
@@ -322,13 +322,13 @@
     "meta": {
       "eyebrow": "Trayectoria Profesional",
       "title": "Experiencia Laboral",
-      "subtitle": "Un historial de construcción de prácticas de ingeniería de calidad automatizadas en equipos fintech, SaaS y plataforma.",
-      "imageQuery": "reunión de equipo colaboración en oficina"
+      "subtitle": "Un historial de construcción de prácticas de ingeniería de calidad orientadas a la automatización en equipos de fintech, SaaS y plataformas.",
+      "imageQuery": "reunión de equipo colaboración oficina"
     },
     "timeline": {
       "eyebrow": "Dónde He Trabajado",
       "title": "Línea de Tiempo Profesional",
-      "subtitle": "Cada rol afiló una arista diferente de mi oficio, desde disciplina de pruebas manuales hasta arquitectura de automatización a escala completa y liderazgo de equipo.",
+      "subtitle": "Cada rol afiló una arista diferente de mi oficio, desde la disciplina de pruebas manuales hasta la arquitectura de automatización a escala completa y liderazgo de equipos.",
       "items": [
         {
           "company": "VeridatAI",
@@ -391,27 +391,32 @@
     "highlights": {
       "eyebrow": "Impacto",
       "title": "Logros Clave",
-      "subtitle": "Momentos en los que transformé la ingeniería de calidad de un complemento a una ventaja competitiva.",
+      "subtitle": "Momentos en los que transformé la ingeniería de calidad de una ocurrencia tardía a una ventaja competitiva.",
       "items": [
         {
           "title": "Framework Architect",
-          "description": "Designed and shipped a reusable, cross-team automation framework now adopted as the default testing standard at VeridatAI."
+          "description": "Designed and shipped a reusable, cross-team automation framework now adopted as the default testing standard at VeridatAI.",
+          "imageQuery": "software architecture blueprint diagram"
         },
         {
           "title": "CI/CD Quality Gates",
-          "description": "Embedded automated regression and smoke suites directly into deployment pipelines, catching defects before release instead of after."
+          "description": "Embedded automated regression and smoke suites directly into deployment pipelines, catching defects before release instead of after.",
+          "imageQuery": "ci cd deployment pipeline screen"
         },
         {
           "title": "Cross-Team Mentorship",
-          "description": "Coached junior QA engineers on automation design patterns, debugging discipline and sustainable test maintenance."
+          "description": "Coached junior QA engineers on automation design patterns, debugging discipline and sustainable test maintenance.",
+          "imageQuery": "mentor teaching colleague computer"
         },
         {
           "title": "Visual Regression Pipeline",
-          "description": "Built a dedicated visual testing pipeline at Atomic Builder to protect generated UI output from unintended layout drift."
+          "description": "Built a dedicated visual testing pipeline at Atomic Builder to protect generated UI output from unintended layout drift.",
+          "imageQuery": "visual regression testing screenshots"
         },
         {
           "title": "Process Transformation",
-          "description": "Led the transition from manual-heavy regression cycles to a hybrid automation strategy at NetSol Technologies."
+          "description": "Led the transition from manual-heavy regression cycles to a hybrid automation strategy at NetSol Technologies.",
+          "imageQuery": "process transformation workflow diagram"
         }
       ]
     },
@@ -425,15 +430,15 @@
     "hero": {
       "eyebrow": "Acerca de Rao Muhammad Ali",
       "titlePrefix": "Construyendo calidad en cada",
-      "titleHighlight": "pipeline de lanzamiento",
-      "subtitle": "Un SDET e Ingeniero de QA que trata las pruebas como una disciplina de ingeniería, no como un complemento, diseñando frameworks de automatización que detectan regresiones antes de que lleguen a producción.",
-      "imageQuery": "retrato profesional de ingeniero de software"
+      "titleHighlight": "canalización de lanzamiento",
+      "subtitle": "Un SDET e Ingeniero de QA que trata las pruebas como una disciplina de ingeniería, no como una ocurrencia tardía, diseñando marcos de automatización que detecten regresiones antes de que lleguen a producción.",
+      "imageQuery": "retrato de ingeniero de software profesional"
     },
     "summary": {
       "eyebrow": "Resumen Profesional",
-      "title": "Automatización primero, obsesionado con la calidad, enfocado en la entrega",
-      "bio1": "Soy Rao Muhammad Ali, un Ingeniero de Software en Pruebas que construye sistemas de automatización resilientes y mantenibles en capas web, API y rendimiento. Mi trabajo abarca el diseño de arquitecturas de pruebas, su integración en pipelines CI/CD, y colaboración cercana con equipos de desarrollo para que la calidad se valide continuamente, no se agregue al final.",
-      "bio2": "He implementado estrategia de pruebas para productos como VeridatAI y Atomic Builder, llevándolos desde brechas de QA manual a suites de regresión automatizadas con cobertura medible. Me importa el código de prueba legible, ciclos de retroalimentación rápidos, y construir herramientas que hagan que todo el equipo esté más confiado en lo que envía.",
+      "title": "Orientado a la automatización, obsesionado con la calidad, enfocado en la entrega",
+      "bio1": "Soy Rao Muhammad Ali, Ingeniero de Desarrollo de Software en Pruebas que construye sistemas de automatización resilientes y mantenibles en capas web, API y de rendimiento. Mi trabajo abarca diseñar arquitecturas de pruebas, integrarlas en canalizaciones CI/CD y colaborar estrechamente con equipos de desarrollo para que la calidad se valide continuamente, no se añada al final.",
+      "bio2": "He implementado estrategias de testing para productos como VeridatAI y Atomic Builder, transformándolos de brechas en QA manual a suites de regresión automatizadas con cobertura medible. Me importa el código de test legible, ciclos de feedback rápidos y construir herramientas que hagan que todo el equipo confíe más en lo que lanzan.",
       "metrics": [
         {
           "type": "focus",
@@ -460,31 +465,34 @@
     "education": {
       "eyebrow": "Educación",
       "title": "Fundación académica",
-      "subtitle": "Una formación formal en ciencias de la computación combinada con especialización continua y autodidacta en ingeniería de pruebas.",
+      "subtitle": "Una formación formal en ciencias de la computación combinada con especialización continua y autodidacta en ingeniería de testing.",
       "items": [
         {
           "degree": "BS in Computer Science",
           "institution": "National University of Computer & Emerging Sciences",
           "period": "2017 — 2021",
-          "description": "Focused coursework in software engineering, databases, and distributed systems, with a final-year project centered on automated test tooling for web applications."
+          "description": "Focused coursework in software engineering, databases, and distributed systems, with a final-year project centered on automated test tooling for web applications.",
+          "imageQuery": "university computer science campus"
         },
         {
           "degree": "Intermediate in Pre-Engineering",
           "institution": "Punjab College of Science",
           "period": "2015 — 2017",
-          "description": "Built the mathematics and analytical problem-solving foundation that later shaped a methodical, metrics-driven approach to quality engineering."
+          "description": "Built the mathematics and analytical problem-solving foundation that later shaped a methodical, metrics-driven approach to quality engineering.",
+          "imageQuery": "college science classroom students"
         },
         {
           "degree": "Continuous Specialization in Test Automation",
           "institution": "Self-directed & industry training",
           "period": "2021 — Present",
-          "description": "Ongoing deep-dives into automation frameworks, API testing, performance engineering, and CI/CD integration, kept current through hands-on project work."
+          "description": "Ongoing deep-dives into automation frameworks, API testing, performance engineering, and CI/CD integration, kept current through hands-on project work.",
+          "imageQuery": "online learning coding course"
         }
       ]
     },
     "awards": {
       "eyebrow": "Premios y Liderazgo",
-      "title": "Reconocimiento e impacto más allá de la suite de pruebas",
+      "title": "Reconocimiento e impacto más allá de la suite de tests",
       "subtitle": "Contribuciones que se extendieron más allá de la entrega individual hacia mentoría, innovación y comunidad.",
       "items": [
         {
@@ -563,7 +571,7 @@
     },
     "cta": {
       "title": "¿Interesado en trabajar juntos?",
-      "subtitle": "Hablemos sobre cómo la automatización disciplinada de pruebas puede reducir riesgos en tu próximo lanzamiento.",
+      "subtitle": "Hablemos sobre cómo la automatización de tests disciplinada puede reducir riesgos en tu próximo lanzamiento.",
       "button": "Ponte en Contacto"
     }
   },
@@ -571,7 +579,7 @@
     "hero": {
       "eyebrow": "SDET e Ingeniero de QA",
       "title": "Construyendo Calidad en Cada Lanzamiento",
-      "subtitle": "Diseño y construyo sistemas de calidad automatizados, desde frameworks de pruebas resilientes hasta pipelines CI/CD, para que los equipos puedan enviar más rápido con confianza.",
+      "subtitle": "Diseño y construyo sistemas de calidad orientados a la automatización, desde marcos de prueba resilientes hasta canalizaciones CI/CD, para que los equipos puedan entregar más rápido con confianza.",
       "primaryCta": "Ver Proyectos",
       "secondaryCta": "Ver Currículum",
       "terminal": {
@@ -596,8 +604,8 @@
     "summary": {
       "eyebrow": "Resumen Profesional",
       "title": "Ingeniería de calidad con mentalidad de producto",
-      "paragraph1": "Soy Rao Muhammad Ali, Ingeniero de Desarrollo de Software en Pruebas que trabaja en estrecha colaboración con desarrolladores y equipos de producto para integrar la calidad en el ciclo de desarrollo en lugar de añadirla al final.",
-      "paragraph2": "Mi trabajo abarca estrategia de pruebas, arquitectura de automatización, pruebas de API e interfaz de usuario, e integración de CI/CD, con enfoque en marcos que sean mantenibles, rápidos y genuinamente confiables para los equipos de ingeniería.",
+      "paragraph1": "Soy Rao Muhammad Ali, Ingeniero de Desarrollo de Software en Pruebas que trabaja estrechamente con desarrolladores y equipos de producto para construir calidad en el ciclo de vida del desarrollo en lugar de añadirla al final.",
+      "paragraph2": "Mi trabajo abarca estrategia de pruebas, arquitectura de automatización, pruebas de API e interfaz de usuario, e integración CI/CD, con enfoque en marcos que sean mantenibles, rápidos y genuinamente confiables para los equipos de ingeniería.",
       "highlights": [
         {
           "label": "Test Automation",
@@ -631,14 +639,14 @@
           "role": "SDET",
           "description": "A no-code website builder platform. I built a Playwright-driven UI automation suite alongside API test coverage to keep rapid feature releases safe and stable.",
           "stack": "TypeScript · Playwright · Docker · CI/CD",
-          "image": "https://titoaistorageaccount.blob.core.windows.net/titoai-storage/site-images/bb4e8ff7e2be458984bbcce6b5661a07.jpg"
+          "imageQuery": "no code website builder interface"
         }
       ]
     },
     "expertise": {
       "eyebrow": "Experiencia Principal",
       "title": "Herramientas y prácticas en las que confío diariamente",
-      "subtitle": "Una vista rápida de las áreas donde aporto más valor a un equipo.",
+      "subtitle": "Una instantánea rápida de las áreas donde agrego más valor a un equipo.",
       "cta": "Ver Conjunto de Habilidades Completo",
       "items": [
         {
@@ -676,7 +684,7 @@
     "credentials": {
       "eyebrow": "Credenciales",
       "title": "Educación, certificaciones y reconocimiento",
-      "subtitle": "La base del trabajo: educación formal, certificaciones de la industria y reconocimiento de liderazgo.",
+      "subtitle": "La base detrás del trabajo: educación formal, certificaciones de la industria y reconocimiento de liderazgo.",
       "educationLabel": "Educación",
       "educationDegree": "Licenciatura en Ingeniería de Software",
       "educationInstitution": "Universidad de Ingeniería y Tecnología",
